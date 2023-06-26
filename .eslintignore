@@ -4,6 +4,7 @@ node_modules
 app
 # /.src/js/_templates.js
 _templates.js
+_include.js
 _libs.js
 _project.js
 _swiper.js

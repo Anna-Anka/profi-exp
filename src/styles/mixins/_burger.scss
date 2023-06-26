@@ -1,22 +1,23 @@
 @mixin burger {
-	$burger-width: 30px;
-	$burger-height: 30px;
+	$burger-width: 48px;
+	$burger-height: 26px;
 	$burger-line-height: 2px;
 
 	position: relative;
 	width: $burger-width;
 	height: $burger-height;
-	color: $black;
+	color: $yellow-400;
 
 	&::before,
 	&::after {
-		content: '';
 		position: absolute;
 		left: 0;
 		width: 100%;
 		height: $burger-line-height;
 		background-color: currentColor;
-		transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+		transition: transform 0.3s ease-in-out, top 0.3s ease-in-out,
+			width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+		content: '';
 	}
 
 	&::before {
@@ -29,8 +30,8 @@
 
 	&__line {
 		position: absolute;
-		left: 0;
 		top: 50%;
+		left: 0;
 		width: 100%;
 		height: $burger-line-height;
 		background-color: currentColor;
@@ -39,21 +40,29 @@
 	}
 
 	&--active {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 40px;
+
 		&::before,
 		&::after {
 			top: 50%;
-			transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+			width: 20px;
+			background-color: $dark-700;
+			transition: transform 0.3s ease-in-out, top 0.3s ease-in-out,
+				width 0.3s ease-in-out, background-color 0.3s ease-in-out;
 		}
 
 		&::before {
-			transform: rotate(45deg);
+			transform: rotate(45deg) translateX(16px) translateY(-10px);
 		}
 
 		&::after {
-			transform: rotate(-45deg);
+			transform: rotate(-45deg) translateX(10px) translateY(15px);
 		}
 
-		.burger__line {
+		.burger-button__line {
 			transform: scale(0);
 			transition: transform 0.3s ease-in-out;
 		}

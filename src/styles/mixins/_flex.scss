@@ -22,6 +22,12 @@
 	align-items: center;
 }
 
+@mixin flex-column-v-start {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
 @mixin flex-column-sb {
 	display: flex;
 	flex-direction: column;

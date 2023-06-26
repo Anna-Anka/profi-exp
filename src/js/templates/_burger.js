@@ -1,5 +1,5 @@
-import { disableScroll } from '../templates/disable-scroll';
-import { enableScroll } from '../templates/enable-scroll';
+import { disableScroll } from '../utils/_disable-scroll';
+import { enableScroll } from '../utils/_enable-scroll';
 
 export const burger = () => {
     const burger = document?.querySelector('[data-burger]');
