@@ -1,0 +1,35 @@
+.burger-menu {
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	line-height: 1.1;
+
+	&--active {
+		@include mq(lg) {
+			right: 0;
+			z-index: 5;
+			height: 100vh;
+			overflow-y: auto;
+			transform: translateX(0);
+			visibility: visible;
+			opacity: 1;
+			transition: transform 0.3s ease-in-out;
+		}
+	}
+
+	&__item {
+		@include mq(lg) {
+			font-weight: $fw-600;
+			font-size: 18px;
+		}
+
+		&:not(:last-child) {
+			@include adaptive-value-master('margin-right', 38, 16, 1200, 950, 1);
+
+			@include mq(lg) {
+				margin-right: 0;
+				margin-bottom: 24px;
+			}
+		}
+	}
+}

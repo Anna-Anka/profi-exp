@@ -1,0 +1,11 @@
+.socials {
+	display: flex;
+	gap: 9px;
+
+	&__link {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		@include bg-contain;
+	}
+}
