@@ -1,0 +1,16 @@
+// * standart
+@import 'fonts';
+@import 'vars';
+@import 'reset';
+@import 'mixins';
+@import 'libs';
+@import 'templates';
+@import 'global';
+
+// * components
+@import './components/header';
+// @import './components/breadcrumbs';
+@import './components/form';
+@import './components/footer';
+
+// * home-page
