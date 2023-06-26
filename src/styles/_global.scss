@@ -1,16 +1,17 @@
 body {
-	color: $black;
+	color: $grey-500;
 	font-weight: $fw-400;
-	font-family: $roboto, Arial, sans-serif;
-	line-height: 1.3;
-	background-color: $white;
+	font-size: 16px;
+	font-family: $montserrat, Arial, sans-serif;
+	line-height: 1.6;
+	background-color: $dark-700;
 }
 
 .container {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1256px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 20px;
 }
 
 .wrapper {
@@ -29,9 +30,43 @@ body {
 }
 
 .button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@include flex-all-center;
+	position: relative;
+	padding: 14px 24px;
+	font-size: 15px;
+	line-height: 1.1;
+	border: 1px solid $yellow-400;
+
+	&::before {
+		position: absolute;
+		top: -2px;
+		left: -2px;
+		width: calc(100% - 4px);
+		height: calc(100% + 4px);
+		border: inherit;
+		content: '';
+	}
+}
+
+.section {
+	padding: 80px 0;
+}
+
+.title {
+	@include adaptiv-value-base('font-size', 48, 32, 1);
+	@include adaptiv-value-base('margin-bottom', 40, 24, 1);
+	color: $yellow-400;
+}
+
+.title,
+.subtitle {
+	font-weight: $fw-600;
+	font-family: $playfair;
+	line-height: 1.1;
+}
+
+.subtitle {
+	@include adaptiv-value-base('font-size', 18, 16, 1);
 }
 
 .sr-only {
@@ -60,6 +95,8 @@ body {
 .logo {
 	display: inline-block;
 	width: 100%;
+	max-width: 106px;
+	height: 34px;
 
 	&__img {
 		width: 100%;
