@@ -66,6 +66,7 @@
 		"prettier": "^2.8.8",
 		"require-dir": "^1.2.0",
 		"sass": "^1.54.8",
+		"simplebar": "^6.2.5",
 		"start-server-and-test": "^2.0.0",
 		"stylelint": "^14.11.0",
 		"stylelint-config-prettier": "^9.0.3",
@@ -101,7 +102,6 @@
 		"nouislider": "^15.7.0",
 		"raty-js": "^4.0.0",
 		"rellax": "^1.12.1",
-		"simplebar": "^6.2.1",
 		"swiper": "^9.0.5"
 	}
 }

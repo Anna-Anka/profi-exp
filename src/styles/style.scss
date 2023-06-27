@@ -5,13 +5,12 @@
 @import 'mixins';
 @import 'include';
 @import 'templates';
+@import 'utils';
 @import 'global';
 
 // * components
 @import './components/header/header';
 @import './components/header/burger-menu';
-
-@import './components/swiper-pagination';
 
 @import './components/form';
 
@@ -20,5 +19,6 @@
 
 // * home-page
 @import './home/hero';
+@import './home/advantages';
 
 // TODO: Слайдер подключить через модули, а не всю либо дергать

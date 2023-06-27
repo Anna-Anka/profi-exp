@@ -1,0 +1,14 @@
+.simplebar-track {
+	height: 5px;
+	background-color: $dark-850;
+}
+
+.simplebar-scrollbar {
+	height: 5px;
+	background-color: $yellow-600;
+	border-radius: 5px;
+
+	&::before {
+		display: none;
+	}
+}
