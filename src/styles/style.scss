@@ -3,7 +3,7 @@
 @import 'vars';
 @import 'reset';
 @import 'mixins';
-@import 'libs';
+@import 'include';
 @import 'templates';
 @import 'global';
 
@@ -11,8 +11,14 @@
 @import './components/header/header';
 @import './components/header/burger-menu';
 
+@import './components/swiper-pagination';
+
 @import './components/form';
+
 @import './components/footer';
 @import './components/socials';
 
 // * home-page
+@import './home/hero';
+
+// TODO: Слайдер подключить через модули, а не всю либо дергать

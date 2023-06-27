@@ -1,0 +1,31 @@
+.swiper-pagination {
+	width: 100%;
+	max-width: 1256px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets {
+	top: unset;
+	left: 50%;
+	display: flex;
+	gap: 20px;
+	transform: translateX(-50%);
+	@include adaptive-value-base('bottom', 60, 24, 1);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0;
+	background-color: transparent;
+	border: 1px solid $yellow-400;
+	opacity: 1;
+	transition: background-color 0.3s ease-in-out;
+	@include adaptive-value-base('width', 16, 8, 1);
+	@include adaptive-value-base('height', 16, 8, 1);
+}
+
+.swiper-horizontal
+	> .swiper-pagination-bullets
+	.swiper-pagination-bullet-active {
+	background-color: $yellow-400;
+}
