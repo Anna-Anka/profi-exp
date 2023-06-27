@@ -11,15 +11,17 @@
 // * components
 @import './components/header/header';
 @import './components/header/burger-menu';
-
 @import './components/form';
-
 @import './components/footer';
 @import './components/socials';
+
+// * cards
+@import './components/cards/product-card';
 
 // * home-page
 @import './home/hero';
 @import './home/advantages';
+@import './home/expertises';
 @import './home/connection';
 
 // TODO: Слайдер подключить через модули, а не всю либо дергать

@@ -28,7 +28,7 @@
 	align-items: flex-start;
 }
 
-@mixin flex-column-sb {
+@mixin flex-column-v-sb {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
