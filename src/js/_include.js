@@ -8,7 +8,7 @@ import SimpleBar from 'simplebar';
 import mixitup from 'mixitup';
 
 let mixer = mixitup('.expertises__items', {
-    load: { filter: '.engineering'}
+    load: { filter: '.engineering' }
 });
 
 import GraphModal from 'graph-modal';
@@ -18,3 +18,7 @@ import AOS from 'aos';
 AOS.init({
     disable: 'phone'
 });
+
+import { headerSticky } from './templates/_header-sticky';
+
+headerSticky();

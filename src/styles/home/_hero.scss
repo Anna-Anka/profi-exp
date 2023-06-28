@@ -1,23 +1,17 @@
 .hero {
-	position: relative;
+	&__swiper {
+		position: relative;
 
-	&::before,
-	&::after {
-		position: absolute;
-		left: 0;
-		z-index: 2;
-		width: 100%;
-		height: 1px;
-		background-color: rgba($yellow-600, 0.5);
-		content: '';
-	}
-
-	&::before {
-		top: 0;
-	}
-
-	&::after {
-		bottom: 0;
+		&::after {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 2;
+			width: 100%;
+			height: 1px;
+			background-color: rgba($yellow-600, 0.5);
+			content: '';
+		}
 	}
 
 	&__item {
