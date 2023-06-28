@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+
+    <title>Profi Exp</title>
+</head>
+
+<body class="body">
+    <div class="wrapper">
+        <div class="overlay" data-menu-overlay aria-hidden></div>
+<!--  -->
+<header class="header">
+    <div class="container">
+        <nav class="header__wrapper">
+            <a class="header__logo logo" href="#">
+                <img class="logo__img" src="img/logo.svg" alt="логотип" width="106" height="34" loading="lazy">
+            </a>
+            <ul class="header__menu burger-menu" data-menu>
+                <li class="burger-menu__item">
+                    <a class="burger-menu__link" href="#" data-goto="#expertises" data-menu-link>
+                        Экспертизы
+                    </a>
+                </li>
+                <li class="burger-menu__item">
+                    <a class="burger-menu__link" href="#" data-goto="#advantages" data-menu-link>
+                        Как мы работаем
+                    </a>
+                </li>
+                <li class="burger-menu__item">
+                    <a class="burger-menu__link" href="#" data-goto="#about" data-menu-link>
+                        О компании
+                    </a>
+                </li>
+                <li class="burger-menu__item">
+                    <a class="burger-menu__link" href="#" data-goto="#reviews" data-menu-link>
+                        Отзывы
+                    </a>
+                </li>
+                <li class="burger-menu__item">
+                    <a class="burger-menu__link" href="#" data-menu-link>
+                        Вакансии
+                    </a>
+                </li>
+                <li class="burger-menu__item">
+                    <a class="burger-menu__link" href="#" data-goto="#contacts" data-menu-link>
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+            <button class="header__connect button" data-graph-path="connect-modal" type="button">
+                Связаться
+            </button>
+            <button class="burger-button" aria-label="Открыть меню" aria-expanded="false" data-burger>
+                <span class="burger-button__line"></span>
+            </button>
+        </nav>
+    </div>
+</header>
+<div class="graph-modal">
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="connect-modal">
+        <div class="graph-modal__box">
+            <button class="graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="graph-modal__content">
+                <div class="connection connection--modal">
+                    <div class="connection__wrapper">
+                        <h2 class="connection__title title">
+                            Оставить заявку
+                        </h2>
+                        <p class="connection__subtext">
+                            Оставьте заявку на экспертизу и мы оперативно с вами свяжемся
+                        </p>
+                        <form class="connection__form form" action="#">
+                            <div class="form__item">
+                                <label class="sr-only" for="connection-name">Введите ваше имя</label>
+                                <input class="form__field" id="connection-name" name="name" type="text" placeholder="Имя">
+                            </div>
+                            <div class="form__item">
+                                <label class="sr-only" for="connection-phone">Введите номер телефона</label>
+                                <input class="form__field" id="connection-phone" name="phone" type="tel" placeholder="Телефон*" required>
+                            </div>
+                            <button class="form__button button" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="main">
+    <h1 class="sr-only">Независимая судебная экспертиза</h1>
+    <section class="hero">
+    <h2 class="sr-only">Независимая судебная экспертиза</h2>
+    <div class="hero__swiper swiper">
+        <ul class="hero__items swiper-wrapper">
+            <li class="hero__item hero__item--custom swiper-slide" style="background-image: url('img/hero/1.png');">
+                <span class="hero__decor" aria-hidden></span>
+                <div class="hero__container container">
+                    <div class="hero__content">
+                        <h3 class="hero__title title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="700">
+                            Независимая судебная экспертиза
+                        </h3>
+                        <div class="hero__text" data-aos="fade-right" data-aos-delay="300" data-aos-duration="700">
+                            <p>
+                                По запросу адвокатов, физических и юридических лиц
+                            </p>
+                        </div>
+                        <button class="hero__button button" data-graph-path="connect-modal" type="button" data-aos="fade-right" data-aos-delay="400" data-aos-duration="700">
+                            Оставить заявку
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="hero__item swiper-slide" style="background-image: url('img/hero/2.png');">
+                <div class="hero__container container">
+                    <div class="hero__content">
+                        <h3 class="hero__title title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="700">
+                            Независимая судебная экспертиза
+                        </h3>
+                        <div class="hero__text" data-aos="fade-right" data-aos-delay="300" data-aos-duration="700">
+                            <p>
+                                По запросу адвокатов, физических и юридических лиц
+                            </p>
+                        </div>
+                        <button class="hero__button button" data-graph-path="connect-modal" type="button" data-aos="fade-right" data-aos-delay="400" data-aos-duration="700">
+                            Оставить заявку
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="hero__item swiper-slide" style="background-image: url('img/hero/3.png');">
+                <div class="hero__container container">
+                    <div class="hero__content">
+                        <h3 class="hero__title title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="700">
+                            Независимая судебная экспертиза
+                        </h3>
+                        <div class="hero__text" data-aos="fade-right" data-aos-delay="300" data-aos-duration="700">
+                            <p>
+                                По запросу адвокатов, физических и юридических лиц
+                            </p>
+                        </div>
+                        <button class="hero__button button" data-graph-path="connect-modal" type="button" data-aos="fade-right" data-aos-delay="400" data-aos-duration="700">
+                            Оставить заявку
+                        </button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+    <section class="advantages" id="advantages">
+    <div class="advantages__container container">
+        <h2 class="sr-only">Преимущества</h2>
+        <ul class="advantages__items" data-simplebar>
+            <li class="advantages__item" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="200" data-aos-duration="700">
+                <span class="advantages__icon" style="background-image: url('img/advantages/1.svg');" aria-hidden></span>
+                <div>
+                    <p>
+                        Более 10 лет успешной работы
+                    </p>
+                </div>
+            </li>
+            <li class="advantages__item" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="300" data-aos-duration="700">
+                <span class="advantages__icon" style="background-image: url('img/advantages/2.svg');" aria-hidden></span>
+                <div>
+                    <p>
+                        Компетентный кадровый состав
+                    </p>
+                </div>
+            </li>
+            <li class="advantages__item" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="400" data-aos-duration="700">
+                <span class="advantages__icon" style="background-image: url('img/advantages/3.svg');" aria-hidden></span>
+                <div>
+                    <p>
+                        Лицензии, аккредитации, допуски СРО
+                    </p>
+                </div>
+            </li>
+            <li class="advantages__item" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="500" data-aos-duration="700">
+                <span class="advantages__icon" style="background-image: url('img/advantages/4.svg');" aria-hidden></span>
+                <div>
+                    <p>
+                        Защита своих заключений в суде
+                    </p>
+                </div>
+            </li>
+            <li class="advantages__item" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="600" data-aos-duration="700">
+                <span class="advantages__icon" style="background-image: url('img/advantages/5.svg');" aria-hidden></span>
+                <div>
+                    <p>
+                        Работаем <br>
+                        по всей России
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+    <section class="expertises" id="expertises">
+    <div class="expertises__container container">
+        <h2 class="expertises__title title">
+            Экспертизы
+        </h2>
+        <div class="expertises__wrapper" data-simplebar>
+            <ul class="expertises__filters">
+                <li class="expertises__filter" data-filter=".engineering">
+                    <button class="expertises__button expertises__button--active" type="button">
+                        Инженерно-техническая
+                    </button>
+                </li>
+                <li class="expertises__filter" data-filter=".autotechnical">
+                    <button class="expertises__button" type="button">
+                        Автотехническая
+                    </button>
+                </li>
+                <li class="expertises__filter" data-filter=".videotechnical">
+                    <button class="expertises__button" type="button">
+                        Видеотехническая
+                    </button>
+                </li>
+                <li class="expertises__filter" data-filter=".genetic">
+                    <button class="expertises__button" type="button">
+                        Генетическая
+                    </button>
+                </li>
+                <li class="expertises__filter" data-filter=".authors">
+                    <button class="expertises__button" type="button">
+                        Автороведческая
+                    </button>
+                </li>
+                <li class="expertises__filter" data-filter=".linguistic">
+                    <button class="expertises__button" type="button">
+                        Лингвистическая
+                    </button>
+                </li>
+                <li class="expertises__filter" data-filter=".fire-technical">
+                    <button class="expertises__button" type="button">
+                        Пожарно-техническая
+                    </button>
+                </li>
+                <li class="expertises__filter" data-filter=".estimated">
+                    <button class="expertises__button" type="button">
+                        Оценочная
+                    </button>
+                </li>
+                <li class="expertises__filter" data-filter=".review">
+                    <button class="expertises__button" type="button">
+                        Рецензия
+                    </button>
+                </li>
+                <li class="expertises__filter" data-filter=".psychiatric">
+                    <button class="expertises__button" type="button">
+                        Психиатрическая
+                    </button>
+                </li>
+                <li class="expertises__filter" data-filter=".economic">
+                    <button class="expertises__button" type="button">
+                        Экономическая
+                    </button>
+                </li>
+                <li class="expertises__filter" data-filter=".chemical">
+                    <button class="expertises__button" type="button">
+                        Химическая
+                    </button>
+                </li>
+                <li class="expertises__filter" data-filter=".construction">
+                    <button class="expertises__button" type="button">
+                        Строительная
+                    </button>
+                </li>
+            </ul>
+            <ul class="expertises__items">
+                <li class="expertises__item mix engineering">
+                    <article class="product-card product-card--expertise">
+
+    <div class="product-card__image">
+        
+        <picture>
+            <source srcset="img/expertises/1.avif" type="image/avif">
+            <source srcset="img/expertises/1.webp" type="image/webp">
+            <img class="product-card__img" src="img/expertises/1.jpg" alt="Экспертиза агрегатов" width="287" height="180" loading="lazy">
+        </picture>
+        
+        
+    </div>
+
+    <div class="product-card__inner">
+        <div class="product-card__body">
+            
+            <h3 class="product-card__title subtitle">Экспертиза агрегатов</h3>
+            
+            <div class="product-card__text">
+                <p>К экспертизе агрегатов прибегают при возникновении в них дефектов и неисправностей, влияющих на процесс производства.</p>
+            </div>
+            
+        </div>
+
+        <div class="product-card__footer">
+            <span class="product-card__price">от 10 000 ₽</span>
+            <button class="product-card__button" data-graph-path="connect-modal" type="button">
+                
+                Заказать
+            </button>
+        </div>
+    </div>
+
+</article>
+                </li>
+                <li class="expertises__item mix engineering autotechnical">
+                    <article class="product-card product-card--expertise">
+
+    <div class="product-card__image">
+        
+        <picture>
+            <source srcset="img/expertises/2.avif" type="image/avif">
+            <source srcset="img/expertises/2.webp" type="image/webp">
+            <img class="product-card__img" src="img/expertises/2.jpg" alt="Экспертиза агрегатов" width="287" height="180" loading="lazy">
+        </picture>
+        
+        
+    </div>
+
+    <div class="product-card__inner">
+        <div class="product-card__body">
+            
+            <h3 class="product-card__title subtitle">Экспертиза агрегатов</h3>
+            
+            <div class="product-card__text">
+                <p>К экспертизе агрегатов прибегают при возникновении в них дефектов и неисправностей, влияющих на процесс производства.</p>
+            </div>
+            
+        </div>
+
+        <div class="product-card__footer">
+            <span class="product-card__price">от 10 000 ₽</span>
+            <button class="product-card__button" data-graph-path="connect-modal" type="button">
+                
+                Заказать
+            </button>
+        </div>
+    </div>
+
+</article>
+                </li>
+                <li class="expertises__item mix engineering videotechnical">
+                    <article class="product-card product-card--expertise">
+
+    <div class="product-card__image">
+        
+        <picture>
+            <source srcset="img/expertises/3.avif" type="image/avif">
+            <source srcset="img/expertises/3.webp" type="image/webp">
+            <img class="product-card__img" src="img/expertises/3.jpg" alt="Экспертиза агрегатов" width="287" height="180" loading="lazy">
+        </picture>
+        
+        
+    </div>
+
+    <div class="product-card__inner">
+        <div class="product-card__body">
+            
+            <h3 class="product-card__title subtitle">Экспертиза агрегатов</h3>
+            
+            <div class="product-card__text">
+                <p>К экспертизе агрегатов прибегают при возникновении в них дефектов и неисправностей, влияющих на процесс производства.</p>
+            </div>
+            
+        </div>
+
+        <div class="product-card__footer">
+            <span class="product-card__price">от 10 000 ₽</span>
+            <button class="product-card__button" data-graph-path="connect-modal" type="button">
+                
+                Заказать
+            </button>
+        </div>
+    </div>
+
+</article>
+                </li>
+                <li class="expertises__item mix engineering genetic">
+                    <article class="product-card product-card--expertise">
+
+    <div class="product-card__image">
+        
+        <picture>
+            <source srcset="img/expertises/4.avif" type="image/avif">
+            <source srcset="img/expertises/4.webp" type="image/webp">
+            <img class="product-card__img" src="img/expertises/4.jpg" alt="Экспертиза агрегатов" width="287" height="180" loading="lazy">
+        </picture>
+        
+        
+    </div>
+
+    <div class="product-card__inner">
+        <div class="product-card__body">
+            
+            <h3 class="product-card__title subtitle">Экспертиза агрегатов</h3>
+            
+            <div class="product-card__text">
+                <p>К экспертизе агрегатов прибегают при возникновении в них дефектов и неисправностей, влияющих на процесс производства.</p>
+            </div>
+            
+        </div>
+
+        <div class="product-card__footer">
+            <span class="product-card__price">от 10 000 ₽</span>
+            <button class="product-card__button" data-graph-path="connect-modal" type="button">
+                
+                Заказать
+            </button>
+        </div>
+    </div>
+
+</article>
+                </li>
+                <li class="expertises__item mix engineering authors">
+                    <article class="product-card product-card--expertise">
+
+    <div class="product-card__image">
+        
+        <picture>
+            <source srcset="img/expertises/1.avif" type="image/avif">
+            <source srcset="img/expertises/1.webp" type="image/webp">
+            <img class="product-card__img" src="img/expertises/1.jpg" alt="Экспертиза агрегатов" width="287" height="180" loading="lazy">
+        </picture>
+        
+        
+    </div>
+
+    <div class="product-card__inner">
+        <div class="product-card__body">
+            
+            <h3 class="product-card__title subtitle">Экспертиза агрегатов</h3>
+            
+            <div class="product-card__text">
+                <p>К экспертизе агрегатов прибегают при возникновении в них дефектов и неисправностей, влияющих на процесс производства.</p>
+            </div>
+            
+        </div>
+
+        <div class="product-card__footer">
+            <span class="product-card__price">от 10 000 ₽</span>
+            <button class="product-card__button" data-graph-path="connect-modal" type="button">
+                
+                Заказать
+            </button>
+        </div>
+    </div>
+
+</article>
+                </li>
+                <li class="expertises__item mix engineering linguistic">
+                    <article class="product-card product-card--expertise">
+
+    <div class="product-card__image">
+        
+        <picture>
+            <source srcset="img/expertises/2.avif" type="image/avif">
+            <source srcset="img/expertises/2.webp" type="image/webp">
+            <img class="product-card__img" src="img/expertises/2.jpg" alt="Экспертиза агрегатов" width="287" height="180" loading="lazy">
+        </picture>
+        
+        
+    </div>
+
+    <div class="product-card__inner">
+        <div class="product-card__body">
+            
+            <h3 class="product-card__title subtitle">Экспертиза агрегатов</h3>
+            
+            <div class="product-card__text">
+                <p>К экспертизе агрегатов прибегают при возникновении в них дефектов и неисправностей, влияющих на процесс производства.</p>
+            </div>
+            
+        </div>
+
+        <div class="product-card__footer">
+            <span class="product-card__price">от 10 000 ₽</span>
+            <button class="product-card__button" data-graph-path="connect-modal" type="button">
+                
+                Заказать
+            </button>
+        </div>
+    </div>
+
+</article>
+                </li>
+                <li class="expertises__item mix engineering fire-technical">
+                    <article class="product-card product-card--expertise">
+
+    <div class="product-card__image">
+        
+        <picture>
+            <source srcset="img/expertises/3.avif" type="image/avif">
+            <source srcset="img/expertises/3.webp" type="image/webp">
+            <img class="product-card__img" src="img/expertises/3.jpg" alt="Экспертиза агрегатов" width="287" height="180" loading="lazy">
+        </picture>
+        
+        
+    </div>
+
+    <div class="product-card__inner">
+        <div class="product-card__body">
+            
+            <h3 class="product-card__title subtitle">Экспертиза агрегатов</h3>
+            
+            <div class="product-card__text">
+                <p>К экспертизе агрегатов прибегают при возникновении в них дефектов и неисправностей, влияющих на процесс производства.</p>
+            </div>
+            
+        </div>
+
+        <div class="product-card__footer">
+            <span class="product-card__price">от 10 000 ₽</span>
+            <button class="product-card__button" data-graph-path="connect-modal" type="button">
+                
+                Заказать
+            </button>
+        </div>
+    </div>
+
+</article>
+                </li>
+                <li class="expertises__item mix engineering estimated">
+                    <article class="product-card product-card--expertise">
+
+    <div class="product-card__image">
+        
+        <picture>
+            <source srcset="img/expertises/4.avif" type="image/avif">
+            <source srcset="img/expertises/4.webp" type="image/webp">
+            <img class="product-card__img" src="img/expertises/4.jpg" alt="Экспертиза агрегатов" width="287" height="180" loading="lazy">
+        </picture>
+        
+        
+    </div>
+
+    <div class="product-card__inner">
+        <div class="product-card__body">
+            
+            <h3 class="product-card__title subtitle">Экспертиза агрегатов</h3>
+            
+            <div class="product-card__text">
+                <p>К экспертизе агрегатов прибегают при возникновении в них дефектов и неисправностей, влияющих на процесс производства.</p>
+            </div>
+            
+        </div>
+
+        <div class="product-card__footer">
+            <span class="product-card__price">от 10 000 ₽</span>
+            <button class="product-card__button" data-graph-path="connect-modal" type="button">
+                
+                Заказать
+            </button>
+        </div>
+    </div>
+
+</article>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+    <section class="about" id="about">
+    <div class="container">
+        <h2 class="about__title title">О компании</h2>
+        <div class="about__wrapper">
+            <div class="about__inner" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                <div class="about__text">
+                    <p>
+                        На сегодняшний день ООО «Профи-эксп» является одной из ведущих экспертных организаций в России. Эксперты обладают обширными знаниями в своих предметных и смежных с ними
+                        областях.
+                    </p>
+                    <p>
+                        ООО «Профи-эксп» за годы своей работы провел тысячи независимых экспертиз. Экспертные заключения, составленные специалистами Центра, помогли нашим клиентам выиграть множество
+                        судебных дел.
+                    </p>
+                    <p>
+                        Одно из главных преимуществ ООО «Профи-эксп» – универсальность. Специалисты Центра осуществляют полный спектр независимых экспертиз и исследований от установления ущерба в
+                        результате ДТП до анализа
+                        проектно-сметной документации. Центр проводит редкие виды экспертиз, носящие прецедентный характер. Количество проводимых исследований увеличивается с каждым днем.
+                    </p>
+                </div>
+            </div>
+            <div class="about__slider slider" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+                <div class="about__image">
+                    <div class="about__main slider-main">
+                        <ul class="swiper-wrapper">
+                            <li class="about__big swiper-slide">
+                                <picture>
+                                    <source srcset="img/about/1.avif" type="image/avif">
+                                    <source srcset="img/about/1.webp" type="image/webp">
+                                    <img class="about__img" src="img/about/1.png" alt="Сертификат соответствия судебного эксперта" width="280" height="400" loading="lazy">
+                                </picture>
+                            </li>
+                            <li class="about__big swiper-slide">
+                                <picture>
+                                    <source srcset="img/about/2.avif" type="image/avif">
+                                    <source srcset="img/about/2.webp" type="image/webp">
+                                    <img class="about__img" src="img/about/2.png" alt="Сертификат соответствия судебного эксперта" width="280" height="400" loading="lazy">
+                                </picture>
+                            </li>
+                            <li class="about__big swiper-slide">
+                                <picture>
+                                    <source srcset="img/about/3.avif" type="image/avif">
+                                    <source srcset="img/about/3.webp" type="image/webp">
+                                    <img class="about__img" src="img/about/3.png" alt="Сертификат соответствия судебного эксперта" width="280" height="400" loading="lazy">
+                                </picture>
+                            </li>
+                            <li class="about__big swiper-slide">
+                                <picture>
+                                    <source srcset="img/about/4.avif" type="image/avif">
+                                    <source srcset="img/about/4.webp" type="image/webp">
+                                    <img class="about__img" src="img/about/4.png" alt="Сертификат соответствия судебного эксперта" width="280" height="400" loading="lazy">
+                                </picture>
+                            </li>
+                            <li class="about__big swiper-slide">
+                                <picture>
+                                    <source srcset="img/about/5.avif" type="image/avif">
+                                    <source srcset="img/about/5.webp" type="image/webp">
+                                    <img class="about__img" src="img/about/5.png" alt="Сертификат соответствия судебного эксперта" width="280" height="400" loading="lazy">
+                                </picture>
+                            </li>
+                            <li class="about__big swiper-slide">
+                                <picture>
+                                    <source srcset="img/about/1.avif" type="image/avif">
+                                    <source srcset="img/about/1.webp" type="image/webp">
+                                    <img class="about__img" src="img/about/1.png" alt="Сертификат соответствия судебного эксперта" width="280" height="400" loading="lazy">
+                                </picture>
+                            </li>
+                            <li class="about__big swiper-slide">
+                                <picture>
+                                    <source srcset="img/about/2.avif" type="image/avif">
+                                    <source srcset="img/about/2.webp" type="image/webp">
+                                    <img class="about__img" src="img/about/2.png" alt="Сертификат соответствия судебного эксперта" width="280" height="400" loading="lazy">
+                                </picture>
+                            </li>
+                            <li class="about__big swiper-slide">
+                                <picture>
+                                    <source srcset="img/about/3.avif" type="image/avif">
+                                    <source srcset="img/about/3.webp" type="image/webp">
+                                    <img class="about__img" src="img/about/3.png" alt="Сертификат соответствия судебного эксперта" width="280" height="400" loading="lazy">
+                                </picture>
+                            </li>
+                            <li class="about__big swiper-slide">
+                                <picture>
+                                    <source srcset="img/about/4.avif" type="image/avif">
+                                    <source srcset="img/about/4.webp" type="image/webp">
+                                    <img class="about__img" src="img/about/4.png" alt="Сертификат соответствия судебного эксперта" width="280" height="400" loading="lazy">
+                                </picture>
+                            </li>
+                            <li class="about__big swiper-slide">
+                                <picture>
+                                    <source srcset="img/about/5.avif" type="image/avif">
+                                    <source srcset="img/about/5.webp" type="image/webp">
+                                    <img class="about__img" src="img/about/5.png" alt="Сертификат соответствия судебного эксперта" width="280" height="400" loading="lazy">
+                                </picture>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about__small slider-nav">
+                    <ul class="swiper-wrapper">
+                        <li class="about__thumb swiper-slide">
+                            <picture>
+                                <source srcset="img/about/1.avif" type="image/avif">
+                                <source srcset="img/about/1.webp" type="image/webp">
+                                <img class="about__img" src="img/about/1.png" alt="Сертификат соответствия судебного эксперта" width="56" height="80" loading="lazy">
+                            </picture>
+                        </li>
+                        <li class="about__thumb swiper-slide">
+                            <picture>
+                                <source srcset="img/about/2.avif" type="image/avif">
+                                <source srcset="img/about/2.webp" type="image/webp">
+                                <img class="about__img" src="img/about/2.png" alt="Сертификат соответствия судебного эксперта" width="56" height="80" loading="lazy">
+                            </picture>
+                        </li>
+                        <li class="about__thumb swiper-slide">
+                            <picture>
+                                <source srcset="img/about/3.avif" type="image/avif">
+                                <source srcset="img/about/3.webp" type="image/webp">
+                                <img class="about__img" src="img/about/3.png" alt="Сертификат соответствия судебного эксперта" width="56" height="80" loading="lazy">
+                            </picture>
+                        </li>
+                        <li class="about__thumb swiper-slide">
+                            <picture>
+                                <source srcset="img/about/4.avif" type="image/avif">
+                                <source srcset="img/about/4.webp" type="image/webp">
+                                <img class="about__img" src="img/about/4.png" alt="Сертификат соответствия судебного эксперта" width="56" height="80" loading="lazy">
+                            </picture>
+                        </li>
+                        <li class="about__thumb swiper-slide">
+                            <picture>
+                                <source srcset="img/about/5.avif" type="image/avif">
+                                <source srcset="img/about/5.webp" type="image/webp">
+                                <img class="about__img" src="img/about/5.png" alt="Сертификат соответствия судебного эксперта" width="56" height="80" loading="lazy">
+                            </picture>
+                        </li>
+                        <li class="about__thumb swiper-slide">
+                            <picture>
+                                <source srcset="img/about/1.avif" type="image/avif">
+                                <source srcset="img/about/1.webp" type="image/webp">
+                                <img class="about__img" src="img/about/1.png" alt="Сертификат соответствия судебного эксперта" width="56" height="80" loading="lazy">
+                            </picture>
+                        </li>
+                        <li class="about__thumb swiper-slide">
+                            <picture>
+                                <source srcset="img/about/2.avif" type="image/avif">
+                                <source srcset="img/about/2.webp" type="image/webp">
+                                <img class="about__img" src="img/about/2.png" alt="Сертификат соответствия судебного эксперта" width="56" height="80" loading="lazy">
+                            </picture>
+                        </li>
+                        <li class="about__thumb swiper-slide">
+                            <picture>
+                                <source srcset="img/about/3.avif" type="image/avif">
+                                <source srcset="img/about/3.webp" type="image/webp">
+                                <img class="about__img" src="img/about/3.png" alt="Сертификат соответствия судебного эксперта" width="56" height="80" loading="lazy">
+                            </picture>
+                        </li>
+                        <li class="about__thumb swiper-slide">
+                            <picture>
+                                <source srcset="img/about/4.avif" type="image/avif">
+                                <source srcset="img/about/4.webp" type="image/webp">
+                                <img class="about__img" src="img/about/4.png" alt="Сертификат соответствия судебного эксперта" width="56" height="80" loading="lazy">
+                            </picture>
+                        </li>
+                        <li class="about__thumb swiper-slide">
+                            <picture>
+                                <source srcset="img/about/5.avif" type="image/avif">
+                                <source srcset="img/about/5.webp" type="image/webp">
+                                <img class="about__img" src="img/about/5.png" alt="Сертификат соответствия судебного эксперта" width="56" height="80" loading="lazy">
+                            </picture>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="reviews" id="reviews">
+    <div class="container">
+        <h2 class="reviews__title title">
+            Отзывы
+        </h2>
+
+        <div class="reviews__wrapper" data-aos="fade-up" data-aos-duration="1000">
+            <div class="reviews__swiper swiper">
+                <ul class="reviews__items swiper-wrapper">
+                    <li class="reviews__item swiper-slide">
+                        <article class="review-card">
+                            <div class="review-card__content">
+                                <div class="review-card__header">
+                                    <picture>
+                                        <source srcset="img/reviews/avatar.avif" type="image/avif">
+                                        <source srcset="img/reviews/avatar.webp" type="image/webp">
+                                        <img class="review-card__img" src="img/reviews/avatar.png" alt="Company tag line here" width="100" height="100" loading="lazy">
+                                    </picture>
+                                    <span class="review-card__subtitle">
+                                        Благодарственное письмо
+                                    </span>
+                                </div>
+                                <div class="review-card__body">
+                                    <h3 class="review-card__title subtitle">
+                                        Директор ГУП «Орёлформация»
+                                    </h3>
+                                    <div class="review-card__text">
+                                        <p>
+                                            Выражаем искренюю благодарность ООО «Профи-эксп» за длительное и плодотворное сотрудничество. Мы высоко ценим установившиеся между нами партнёрские
+                                            отношения
+                                            и взаимопонимание.
+                                        </p>
+                                        <p>
+                                            Хотим подчеркнуть высокий уровень профессионализма, и поблагодарить за оперативность в шешении вопросов. Желаем вам дальнейших успехов в работе,
+                                            экономической
+                                            стабильности, и достижения поставленных целей.
+                                        </p>
+                                    </div>
+                                    <span class="review-card__author subtitle">Дубовик Т.А.</span>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="reviews__item swiper-slide">
+                        <article class="review-card">
+                            <div class="review-card__content">
+                                <div class="review-card__header">
+                                    <picture>
+                                        <source srcset="img/reviews/avatar.avif" type="image/avif">
+                                        <source srcset="img/reviews/avatar.webp" type="image/webp">
+                                        <img class="review-card__img" src="img/reviews/avatar.png" alt="Company tag line here" width="100" height="100" loading="lazy">
+                                    </picture>
+                                    <span class="review-card__subtitle">
+                                        Благодарственное письмо
+                                    </span>
+                                </div>
+                                <div class="review-card__body">
+                                    <h3 class="review-card__title subtitle">
+                                        Директор ГУП «Орёлформация»
+                                    </h3>
+                                    <div class="review-card__text">
+                                        <p>
+                                            Выражаем искренюю благодарность ООО «Профи-эксп» за длительное и плодотворное сотрудничество. Мы высоко ценим установившиеся между нами партнёрские
+                                            отношения
+                                            и взаимопонимание.
+                                        </p>
+                                        <p>
+                                            Хотим подчеркнуть высокий уровень профессионализма, и поблагодарить за оперативность в шешении вопросов. Желаем вам дальнейших успехов в работе,
+                                            экономической
+                                            стабильности, и достижения поставленных целей.
+                                        </p>
+                                    </div>
+                                    <span class="review-card__author subtitle">Дубовик Т.А.</span>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="reviews__item swiper-slide">
+                        <article class="review-card">
+                            <div class="review-card__content">
+                                <div class="review-card__header">
+                                    <picture>
+                                        <source srcset="img/reviews/avatar.avif" type="image/avif">
+                                        <source srcset="img/reviews/avatar.webp" type="image/webp">
+                                        <img class="review-card__img" src="img/reviews/avatar.png" alt="Company tag line here" width="100" height="100" loading="lazy">
+                                    </picture>
+                                    <span class="review-card__subtitle">
+                                        Благодарственное письмо
+                                    </span>
+                                </div>
+                                <div class="review-card__body">
+                                    <h3 class="review-card__title subtitle">
+                                        Директор ГУП «Орёлформация»
+                                    </h3>
+                                    <div class="review-card__text">
+                                        <p>
+                                            Выражаем искренюю благодарность ООО «Профи-эксп» за длительное и плодотворное сотрудничество. Мы высоко ценим установившиеся между нами партнёрские
+                                            отношения
+                                            и взаимопонимание.
+                                        </p>
+                                        <p>
+                                            Хотим подчеркнуть высокий уровень профессионализма, и поблагодарить за оперативность в шешении вопросов. Желаем вам дальнейших успехов в работе,
+                                            экономической
+                                            стабильности, и достижения поставленных целей.
+                                        </p>
+                                    </div>
+                                    <span class="review-card__author subtitle">Дубовик Т.А.</span>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="cases">
+    <div class="container">
+        <h2 class="cases__title title">
+            Выполненные экспертизы
+        </h2>
+        <ul class="cases__items" data-simplebar>
+            <li class="cases__item">
+                <article class="product-card product-card--case">
+
+    <div class="product-card__image">
+        
+        
+        <picture>
+            <source srcset="img/cases/1.avif" type="image/avif">
+            <source srcset="img/cases/1.webp" type="image/webp">
+            <img class="product-card__img" src="img/cases/1.jpg" alt="Видеотехническая / Монтаж, подлинность видеофонограммы" width="380" height="165" loading="lazy">
+        </picture>
+        
+    </div>
+
+    <div class="product-card__inner">
+        <div class="product-card__body">
+            
+            <span class="product-card__code">А40-49769/15</span>
+            
+            <h3 class="product-card__title subtitle">Видеотехническая / Монтаж, подлинность видеофонограммы</h3>
+            
+        </div>
+
+        <div class="product-card__footer">
+            <span class="product-card__price">от 10 000 ₽</span>
+            <button class="product-card__button" data-graph-path="connect-modal" type="button">
+                Заказать подобную
+                
+            </button>
+        </div>
+    </div>
+
+</article>
+            </li>
+            <li class="cases__item">
+                <article class="product-card product-card--case">
+
+    <div class="product-card__image">
+        
+        
+        <picture>
+            <source srcset="img/cases/2.avif" type="image/avif">
+            <source srcset="img/cases/2.webp" type="image/webp">
+            <img class="product-card__img" src="img/cases/2.jpg" alt="Видеотехническая / Монтаж, подлинность видеофонограммы" width="380" height="165" loading="lazy">
+        </picture>
+        
+    </div>
+
+    <div class="product-card__inner">
+        <div class="product-card__body">
+            
+            <span class="product-card__code">А40-49769/15</span>
+            
+            <h3 class="product-card__title subtitle">Видеотехническая / Монтаж, подлинность видеофонограммы</h3>
+            
+        </div>
+
+        <div class="product-card__footer">
+            <span class="product-card__price">от 10 000 ₽</span>
+            <button class="product-card__button" data-graph-path="connect-modal" type="button">
+                Заказать подобную
+                
+            </button>
+        </div>
+    </div>
+
+</article>
+            </li>
+            <li class="cases__item">
+                <article class="product-card product-card--case">
+
+    <div class="product-card__image">
+        
+        
+        <picture>
+            <source srcset="img/cases/3.avif" type="image/avif">
+            <source srcset="img/cases/3.webp" type="image/webp">
+            <img class="product-card__img" src="img/cases/3.jpg" alt="Видеотехническая / Монтаж, подлинность видеофонограммы" width="380" height="165" loading="lazy">
+        </picture>
+        
+    </div>
+
+    <div class="product-card__inner">
+        <div class="product-card__body">
+            
+            <span class="product-card__code">А40-49769/15</span>
+            
+            <h3 class="product-card__title subtitle">Видеотехническая / Монтаж, подлинность видеофонограммы</h3>
+            
+        </div>
+
+        <div class="product-card__footer">
+            <span class="product-card__price">от 10 000 ₽</span>
+            <button class="product-card__button" data-graph-path="connect-modal" type="button">
+                Заказать подобную
+                
+            </button>
+        </div>
+    </div>
+
+</article>
+            </li>
+            <li class="cases__item">
+                <article class="product-card product-card--case">
+
+    <div class="product-card__image">
+        
+        
+        <picture>
+            <source srcset="img/cases/1.avif" type="image/avif">
+            <source srcset="img/cases/1.webp" type="image/webp">
+            <img class="product-card__img" src="img/cases/1.jpg" alt="Видеотехническая / Монтаж, подлинность видеофонограммы" width="380" height="165" loading="lazy">
+        </picture>
+        
+    </div>
+
+    <div class="product-card__inner">
+        <div class="product-card__body">
+            
+            <span class="product-card__code">А40-49769/15</span>
+            
+            <h3 class="product-card__title subtitle">Видеотехническая / Монтаж, подлинность видеофонограммы</h3>
+            
+        </div>
+
+        <div class="product-card__footer">
+            <span class="product-card__price">от 10 000 ₽</span>
+            <button class="product-card__button" data-graph-path="connect-modal" type="button">
+                Заказать подобную
+                
+            </button>
+        </div>
+    </div>
+
+</article>
+            </li>
+            <li class="cases__item">
+                <article class="product-card product-card--case">
+
+    <div class="product-card__image">
+        
+        
+        <picture>
+            <source srcset="img/cases/2.avif" type="image/avif">
+            <source srcset="img/cases/2.webp" type="image/webp">
+            <img class="product-card__img" src="img/cases/2.jpg" alt="Видеотехническая / Монтаж, подлинность видеофонограммы" width="380" height="165" loading="lazy">
+        </picture>
+        
+    </div>
+
+    <div class="product-card__inner">
+        <div class="product-card__body">
+            
+            <span class="product-card__code">А40-49769/15</span>
+            
+            <h3 class="product-card__title subtitle">Видеотехническая / Монтаж, подлинность видеофонограммы</h3>
+            
+        </div>
+
+        <div class="product-card__footer">
+            <span class="product-card__price">от 10 000 ₽</span>
+            <button class="product-card__button" data-graph-path="connect-modal" type="button">
+                Заказать подобную
+                
+            </button>
+        </div>
+    </div>
+
+</article>
+            </li>
+            <li class="cases__item">
+                <article class="product-card product-card--case">
+
+    <div class="product-card__image">
+        
+        
+        <picture>
+            <source srcset="img/cases/3.avif" type="image/avif">
+            <source srcset="img/cases/3.webp" type="image/webp">
+            <img class="product-card__img" src="img/cases/3.jpg" alt="Видеотехническая / Монтаж, подлинность видеофонограммы" width="380" height="165" loading="lazy">
+        </picture>
+        
+    </div>
+
+    <div class="product-card__inner">
+        <div class="product-card__body">
+            
+            <span class="product-card__code">А40-49769/15</span>
+            
+            <h3 class="product-card__title subtitle">Видеотехническая / Монтаж, подлинность видеофонограммы</h3>
+            
+        </div>
+
+        <div class="product-card__footer">
+            <span class="product-card__price">от 10 000 ₽</span>
+            <button class="product-card__button" data-graph-path="connect-modal" type="button">
+                Заказать подобную
+                
+            </button>
+        </div>
+    </div>
+
+</article>
+            </li>
+        </ul>
+    </div>
+</section>
+    <section class="connection">
+    <div class="container">
+        <div class="connection__wrapper">
+            <h2 class="connection__title title">
+                Оставить заявку
+            </h2>
+            <p class="connection__subtext">
+                Оставьте заявку на экспертизу и мы оперативно с вами свяжемся
+            </p>
+            <form class="connection__form form" action="#" data-aos="fade-up" data-aos-duration="1000">
+                <div class="form__item">
+                    <label class="sr-only" for="connection-name">Введите ваше имя</label>
+                    <input class="form__field" id="connection-name" name="name" type="text" placeholder="Имя">
+                </div>
+                <div class="form__item">
+                    <label class="sr-only" for="connection-phone">Введите номер телефона</label>
+                    <input class="form__field" id="connection-phone" name="phone" type="tel" placeholder="Телефон*" required>
+                </div>
+                <button class="button" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+</section>
+    <section class="contacts" id="contacts">
+    <div class="contacts__wrapper">
+        <div class="contacts__inner" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+            <h2 class="contacts__title title">
+                Контакты
+            </h2>
+            <address class="contacts__info">
+                <ul class="contacts__items">
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="tel:+7495123456">
+                            +7 (495) 123 456
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:info@profi-expert.ru">
+                            info@profi-expert.ru
+                        </a>
+                    </li>
+                    <li class="contacts__item contacts__item--text">
+                        Связаться с нами в
+                        <a class="contacts__link" href="#" target="_blank">
+                            Телеграм
+                        </a>
+                    </li>
+                </ul>
+                <div class="contacts__address">
+                    <span>Адрес:</span>
+                    <p>127000, Москва, площадь Труда, дом 2</p>
+                </div>
+            </address>
+        </div>
+        <div class="contacts__map" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
+                    href="https://yandex.ru/maps/geo/stantsiya_ploshchad_gagarina/1727703611/?indoorLevel=1&ll=37.589594%2C55.706831&utm_medium=mapframe&utm_source=maps&z=17.21"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Станция Площадь Гагарина — Яндекс Карты</a><iframe
+                    src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.589594%2C55.706831&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNzI3NzAzNjExEoQB0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCc0L7RgdC60L7QstGB0LrQvtC1INGG0LXQvdGC0YDQsNC70YzQvdC-0LUg0LrQvtC70YzRhtC-LCDRgdGC0LDQvdGG0LjRjyDQn9C70L7RidCw0LTRjCDQk9Cw0LPQsNGA0LjQvdCwIgoNs1gWQhXK015C&z=17.21"
+                    frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="footer__top">
+        <div class="footer__decor" aria-hidden></div>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <a class="footer__logo logo" href="#">
+                        <img class="logo__img" src="img/logo.svg" alt="логотип" width="106" height="34" loading="lazy">
+                    </a>
+                    <p class="footer__text">
+                        На сегодняшний день ООО «Профи-эксп» является одной из ведущих экспертных организаций в России.
+                    </p>
+                </div>
+                <div class="footer__content">
+                    <ul class="footer__menu">
+                        <li class="footer__list">
+                            <ul class="footer__items">
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">
+                                        Экспертизы
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">
+                                        Как мы работаем
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">
+                                        О компании
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__list">
+                            <ul class="footer__items">
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">
+                                        Отзывы
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">
+                                        Вакансии
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="footer__connect">
+                        <ul class="footer__items">
+                            <li class="footer__item">
+                                <a class="footer__link" href="tel:+7495123456">
+                                    +7 495 123 456
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="mailto:info@profi-expert.ru">
+                                    info@profi-expert.ru
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <a class="socials__link" href="#" style="background-image: url('img/socials/vk.svg')" target="_blank">
+                                    <span class="sr-only">Вк</span>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="socials__link" href="#" style="background-image: url('img/socials/telegram.svg')" target="_blank">
+                                    <span class="sr-only">Телеграм</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="footer__bottom-box">
+                <span>© 2023 Профит-Эксперт. Все права защищены.</span>
+                <a href="#">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--  -->
+</div>
+</body>
+  
+</html>
