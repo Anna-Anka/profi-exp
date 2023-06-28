@@ -9,7 +9,7 @@
 	top: unset;
 	left: 50%;
 	display: flex;
-	gap: 20px;
+	@include adaptive-value-base('gap', 20, 8, 1);
 	transform: translateX(-50%);
 	@include adaptive-value-base('bottom', 60, 24, 1);
 }

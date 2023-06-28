@@ -1,6 +1,4 @@
 .cases {
-	@include adaptive-value-base('padding-top', 150, 80, 1);
-
 	&__items {
 		padding-bottom: 30px;
 	}

@@ -45,6 +45,12 @@
 			@include mq(sm) {
 				background-size: 195%;
 			}
+
+			.hero__button {
+				@include mq(lg) {
+					background-color: $dark-750;
+				}
+			}
 		}
 
 		&::before,
@@ -126,12 +132,6 @@
 			&:not(:last-child) {
 				margin-bottom: 8px;
 			}
-		}
-	}
-
-	&__button {
-		@include mq(lg) {
-			background-color: $dark-750;
 		}
 	}
 }
