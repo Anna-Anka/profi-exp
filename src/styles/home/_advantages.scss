@@ -22,6 +22,10 @@
 		justify-content: space-between;
 	}
 
+	.simplebar-vertical {
+		display: none;
+	}
+
 	&__item {
 		max-width: 220px;
 		color: $grey-100;

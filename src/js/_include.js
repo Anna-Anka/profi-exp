@@ -13,3 +13,8 @@ let mixer = mixitup('.expertises__items', {
 
 import GraphModal from 'graph-modal';
 const modal = new GraphModal('modal');
+
+import AOS from 'aos';
+AOS.init({
+    disable: 'phone'
+});
