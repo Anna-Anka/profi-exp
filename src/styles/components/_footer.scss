@@ -13,6 +13,7 @@
 				position: absolute;
 				top: 17px;
 				left: 46px;
+				z-index: -1;
 				width: 100%;
 				max-width: 729px;
 				height: 500px;
@@ -23,7 +24,6 @@
 				);
 				border-radius: 729px;
 				content: '';
-				z-index: -1;
 			}
 		}
 	}
@@ -102,6 +102,10 @@
 
 	&__items {
 		@include adaptive-value-base('gap', 22, 14, 1);
+	}
+
+	&__link {
+		@include link-animation;
 	}
 
 	&__connect {

@@ -51,9 +51,31 @@
 		height: 40px;
 		background-color: transparent;
 		background-image: url('../img/icons/close.svg');
+		@include focus-animation;
+		transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+		@media (any-hover: hover) {
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+
+		&:active {
+			transform: scale(0.9);
+		}
 	}
 
 	.form {
+		&__field {
+			@media (any-hover: hover) {
+				&:hover {
+					&::placeholder {
+						color: $dark-800;
+					}
+				}
+			}
+		}
+
 		&__button {
 			color: $dark-700;
 

@@ -7,6 +7,8 @@
 	width: $burger-width;
 	height: $burger-height;
 	color: $yellow-400;
+	transition: color 0.3s ease-in-out, trasnform 0.3s ease-in-out,
+		box-shadow 0.3s ease-in-out;
 
 	&::before,
 	&::after {

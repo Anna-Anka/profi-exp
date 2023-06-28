@@ -66,9 +66,23 @@
 	&__item {
 		&--text {
 			.contacts__link {
-				text-decoration: underline;
+				&::after {
+					transform: scaleX(1);
+				}
+
+				@media (any-hover: hover) {
+					&:hover {
+						&::after {
+							transform: scaleX(0);
+						}
+					}
+				}
 			}
 		}
+	}
+
+	&__link {
+		@include link-animation;
 	}
 
 	&__info {

@@ -19,13 +19,35 @@
 	background-color: transparent;
 	border: 1px solid $yellow-400;
 	opacity: 1;
-	transition: background-color 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 	@include adaptive-value-base('width', 16, 8, 1);
 	@include adaptive-value-base('height', 16, 8, 1);
+
+	&:focus-visible {
+		border-color: $white;
+		outline: 0;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $white;
+			border-color: transparent;
+		}
+	}
+
+	&:active {
+		transform: scale(0.95);
+	}
 }
 
 .swiper-horizontal
 	> .swiper-pagination-bullets
 	.swiper-pagination-bullet-active {
 	background-color: $yellow-400;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $yellow-400;
+		}
+	}
 }

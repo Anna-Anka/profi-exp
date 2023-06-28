@@ -7,6 +7,10 @@
 	border: 1px solid $yellow-400;
 	@include custom-border;
 
+	&::before {
+		z-index: -1;
+	}
+
 	&--case {
 		.product-card__img {
 			height: 165px;
@@ -109,5 +113,10 @@
 	&__button {
 		color: $yellow-400;
 		font-weight: $fw-600;
+		@include link-animation;
+
+		&::after {
+			background-color: $yellow-400;
+		}
 	}
 }

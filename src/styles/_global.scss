@@ -38,6 +38,41 @@ body {
 	line-height: 1.1;
 	border: 1px solid $yellow-400;
 	@include custom-border;
+	transition: box-shadow 0.3s ease-in-out;
+
+	&::before {
+		transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+			top 0.3s ease-in-out, left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	}
+
+	&:focus-visible {
+		border-color: $white;
+		outline: 0;
+
+		&::before {
+			opacity: 0;
+		}
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			&::before {
+				top: 2px;
+				left: 2px;
+				width: calc(100% - 4px);
+				height: calc(100% - 4px);
+			}
+		}
+	}
+
+	&:active {
+		&::before {
+			top: 4px;
+			left: 4px;
+			width: calc(100% - 8px);
+			height: calc(100% - 8px);
+		}
+	}
 }
 
 .title {
@@ -84,6 +119,8 @@ body {
 	width: 100%;
 	max-width: 106px;
 	height: 34px;
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	@include focus-animation;
 
 	&__img {
 		width: 100%;

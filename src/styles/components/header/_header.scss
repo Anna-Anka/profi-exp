@@ -48,7 +48,18 @@
 
 	.burger-button {
 		@include burger;
+		@include focus-animation;
 		z-index: 5;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: $white;
+			}
+		}
+
+		&:active {
+			transform: scale(0.95);
+		}
 
 		@include mq(lg, min) {
 			display: none;
