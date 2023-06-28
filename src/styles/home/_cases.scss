@@ -1,4 +1,8 @@
 .cases {
+	&__title {
+		@include adaptive-value-base('margin-bottom', 40, 18, 1);
+	}
+
 	&__items {
 		padding-bottom: 30px;
 	}

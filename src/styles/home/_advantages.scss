@@ -1,6 +1,10 @@
 .advantages {
 	@include adaptive-value-base('padding-top', 80, 35, 1);
-	@include adaptive-value-base('padding-bottom', 80, 70, 1);
+	padding-bottom: 63px;
+
+	@include mq(md) {
+		padding-bottom: 79px;
+	}
 
 	&__container {
 		@include mq(lg) {
@@ -9,7 +13,7 @@
 	}
 
 	&__items {
-		padding-bottom: 30px;
+		padding-bottom: 25px;
 	}
 
 	.simplebar-content {

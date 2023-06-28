@@ -35,7 +35,7 @@
 	&__inner {
 		flex-shrink: 0;
 		width: calc((100% - (100% - 1256px)) / 2);
-		padding: 90px 20px 130px;
+		padding: 94px 20px 136px;
 
 		@include mq(xl) {
 			width: 45%;
@@ -43,13 +43,13 @@
 
 		@include mq(lg) {
 			width: 100%;
-			padding: 60px 20px 80px;
+			padding: 64px 20px 84px;
 		}
 	}
 
 	&__title {
-		margin-bottom: 35px;
-		font-size: 48px;
+		@include adaptive-value-base('margin-bottom', 41, 42, 1);
+		@include adaptive-value-base('font-size', 48, 48, 1);
 	}
 
 	&__items,
@@ -60,7 +60,7 @@
 	}
 
 	&__items {
-		gap: 24px;
+		gap: 26px;
 	}
 
 	&__item {
@@ -72,7 +72,7 @@
 	}
 
 	&__info {
-		gap: 50px;
+		gap: 53px;
 	}
 
 	&__address {

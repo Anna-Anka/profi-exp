@@ -5,7 +5,7 @@
 	&__top {
 		position: relative;
 		@include adaptive-value-base('padding-top', 51, 40, 1);
-		@include adaptive-value-base('padding-bottom', 67, 40, 1);
+		@include adaptive-value-base('padding-bottom', 57, 40, 1);
 		z-index: 2;
 
 		&::before {
@@ -32,7 +32,7 @@
 		display: flex;
 		gap: 40px;
 		justify-content: space-between;
-		padding-right: 23px;
+		padding-right: 33px;
 
 		@include mq(xl) {
 			padding-right: 0;
@@ -40,6 +40,7 @@
 
 		@include mq(lg) {
 			flex-direction: column;
+			gap: 42px;
 		}
 	}
 
@@ -89,7 +90,7 @@
 
 	&__menu {
 		@include mq(sm) {
-			gap: 14px;
+			gap: 28px;
 		}
 	}
 
@@ -100,7 +101,7 @@
 	}
 
 	&__items {
-		@include adaptive-value-base('gap', 20, 14, 1);
+		@include adaptive-value-base('gap', 22, 14, 1);
 	}
 
 	&__connect {

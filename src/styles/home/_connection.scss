@@ -1,6 +1,10 @@
 .connection {
-	@include adaptive-value-base('padding-top', 150, 100, 1);
+	padding-top: 102px;
 	@include adaptive-value-base('padding-bottom', 150, 100, 1);
+
+	@include mq(sm) {
+		padding-top: 110px;
+	}
 
 	&__wrapper {
 		width: 100%;
@@ -14,7 +18,7 @@
 	}
 
 	&__title {
-		@include adaptive-value-base('margin-bottom', 40, 16, 1);
+		@include adaptive-value-base('margin-bottom', 46, 18, 1);
 	}
 
 	&__subtext {

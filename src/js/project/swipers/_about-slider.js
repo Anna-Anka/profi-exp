@@ -7,7 +7,6 @@ export const aboutSlider = () => {
 
         const swiperSmall = new Swiper(sliderNav, {
             slidesPerView: 5,
-            // spaceBetween: 3,
             loopedSlides: 5,
             freeMode: true,
             direction: 'vertical',
@@ -24,7 +23,6 @@ export const aboutSlider = () => {
         });
 
         const swiperMain = new Swiper(sliderMain, {
-            // spaceBetween: 26,
             loopedSlides: 4,
 
             thumbs: {

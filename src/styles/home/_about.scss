@@ -1,5 +1,5 @@
 .about {
-	@include adaptive-value-base('padding-top', 120, 80, 1);
+	@include adaptive-value-base('padding-top', 97, 80, 1);
 
 	&__wrapper {
 		position: relative;
@@ -26,9 +26,13 @@
 			}
 		}
 
+		@include mq(xl, min) {
+			padding-right: 40px;
+		}
+
 		@include mq(lg) {
 			flex-direction: column-reverse;
-			gap: 26px;
+			gap: 34px;
 			justify-content: flex-start;
 		}
 	}
@@ -44,7 +48,7 @@
 	&__text {
 		p {
 			&:not(:last-child) {
-				margin-bottom: 12px;
+				@include adaptive-value-base('margin-bottom', 30, 28, 1);
 			}
 		}
 	}
@@ -55,7 +59,7 @@
 		max-width: 416px;
 		height: 452px;
 		overflow: hidden;
-		transform: translateY(-41px);
+		transform: translateY(-36px);
 		@include adaptive-value-base('gap', 20, 14, 1);
 
 		@include mq(lg) {
@@ -68,8 +72,8 @@
 
 		picture {
 			display: inline-block;
-			height: 100%;
 			width: 100%;
+			height: 100%;
 		}
 	}
 
@@ -83,8 +87,8 @@
 		@include custom-border;
 
 		@include mq(sm) {
-			padding: 20px;
 			max-width: 266px;
+			padding: 20px;
 		}
 	}
 

@@ -1,5 +1,6 @@
 .header {
-	padding: 28px 0;
+	@include adaptive-value-base('padding-top', 28, 16, 1);
+	@include adaptive-value-base('padding-bottom', 28, 16, 1);
 	color: $grey-100;
 
 	&__wrapper {

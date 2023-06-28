@@ -125,7 +125,7 @@
 	}
 
 	&__text {
-		@include adaptive-value-base('margin-bottom', 46, 40, 1);
+		@include adaptive-value-base('margin-bottom', 46, 33, 1);
 		color: $grey-100;
 
 		p {

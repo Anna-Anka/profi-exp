@@ -5,6 +5,10 @@
 		}
 	}
 
+	&__title {
+		@include adaptive-value-base('margin-bottom', 44, 24, 1);
+	}
+
 	&__wrapper {
 		padding-bottom: 30px;
 	}
@@ -12,7 +16,7 @@
 	&__filters {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 8px;
+		gap: 10px;
 		margin-bottom: 40px;
 
 		@include mq(lg) {
@@ -23,8 +27,8 @@
 
 	&__button {
 		color: $grey-100;
-		font-size: 14px;
 		border-color: transparent;
+		@include adaptive-value-base('font-size', 14, 12, 1);
 		@include adaptive-value-base('padding-top', 12, 8, 1);
 		@include adaptive-value-base('padding-bottom', 12, 8, 1);
 		@include adaptive-value-base('padding-right', 12, 10, 1);
@@ -58,7 +62,7 @@
 
 		@include mq(lg) {
 			width: 100%;
-			@include adaptive-value-base('max-width', 289, 157, 1);
+			min-width: 158px;
 		}
 	}
 
