@@ -25,6 +25,10 @@
 		animation: slideDown 0.35s ease-out;
 	}
 
+	&--active {
+		z-index: unset;
+	}
+
 	&__wrapper {
 		display: flex;
 		align-items: center;
