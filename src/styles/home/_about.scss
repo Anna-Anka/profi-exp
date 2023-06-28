@@ -1,0 +1,112 @@
+.about {
+	@include adaptive-value-base('padding-top', 120, 80, 1);
+
+	&__wrapper {
+		position: relative;
+		display: flex;
+		gap: 40px;
+		justify-content: space-between;
+
+		&::before {
+			@include mq(lg, min) {
+				position: absolute;
+				top: percent(484, 1435);
+				left: percent(195, 2088);
+				width: 2088px;
+				height: 1435px;
+				background-image: radial-gradient(
+					45.1% 44.38% at 51.78% 48.53%,
+					rgba(255, 167, 67, 0.28) 0%,
+					rgba(134, 134, 134, 0) 100%
+				);
+				border-radius: 2088px;
+				transform: translate(-14%, -50%);
+				opacity: 70%;
+				content: '';
+			}
+		}
+
+		@include mq(lg) {
+			flex-direction: column-reverse;
+			gap: 26px;
+			justify-content: flex-start;
+		}
+	}
+
+	&__inner {
+		width: 100%;
+
+		@include mq(lg, min) {
+			max-width: 600px;
+		}
+	}
+
+	&__text {
+		p {
+			&:not(:last-child) {
+				margin-bottom: 12px;
+			}
+		}
+	}
+
+	&__images {
+		display: flex;
+		width: 100%;
+		max-width: 416px;
+		height: 452px;
+		overflow: hidden;
+		transform: translateY(-41px);
+		@include adaptive-value-base('gap', 20, 14, 1);
+
+		@include mq(lg) {
+			transform: translateY(0);
+		}
+
+		@include mq(sm) {
+			height: 362px;
+		}
+
+		picture {
+			display: inline-block;
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	&__main {
+		width: 100%;
+		max-width: 332px;
+		height: 100%;
+		padding: 26px;
+		overflow: hidden;
+		border: 1px solid $yellow-400;
+		@include custom-border;
+
+		@include mq(sm) {
+			padding: 20px;
+			max-width: 266px;
+		}
+	}
+
+	&__small {
+		width: 100%;
+		max-width: 64px;
+	}
+
+	&__thumb {
+		width: 100%;
+		padding: 4px;
+		border: 1px solid $yellow-400;
+		opacity: 0.35;
+		transition: opacity 0.3s ease-in-out;
+	}
+
+	.swiper-slide-thumb-active {
+		opacity: 1;
+	}
+
+	&__img {
+		height: 100%;
+		object-fit: contain;
+	}
+}
