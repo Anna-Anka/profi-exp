@@ -6,7 +6,7 @@
 	}
 
 	&__title {
-		@include adaptive-value-base('margin-bottom', 44, 24, 1);
+		@include adaptive-value-base('margin-bottom', 40, 20, 1);
 	}
 
 	&__wrapper {
@@ -69,5 +69,9 @@
 	.simplebar-content-wrapper {
 		height: 100% !important;
 		overflow-y: visible !important;
+	}
+
+	.simplebar-content {
+		padding-top: 4px !important;
 	}
 }

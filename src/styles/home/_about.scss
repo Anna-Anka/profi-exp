@@ -53,11 +53,12 @@
 		}
 	}
 
-	&__images {
+	&__slider {
 		display: flex;
 		width: 100%;
 		max-width: 416px;
 		height: 452px;
+		padding: 4px 0;
 		overflow: hidden;
 		transform: translateY(-36px);
 		@include adaptive-value-base('gap', 20, 14, 1);
@@ -77,14 +78,18 @@
 		}
 	}
 
+	&__image {
+		position: relative;
+		border: 1px solid $yellow-400;
+		@include custom-border;
+	}
+
 	&__main {
 		width: 100%;
 		max-width: 332px;
 		height: 100%;
 		padding: 26px;
 		overflow: hidden;
-		border: 1px solid $yellow-400;
-		@include custom-border;
 
 		@include mq(sm) {
 			max-width: 266px;
