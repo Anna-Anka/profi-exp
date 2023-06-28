@@ -9,7 +9,7 @@
 	overflow-x: hidden;
 	overflow-y: auto;
 	text-align: center;
-	background-color: rgba($black, 0.7);
+	background-color: rgba($dark-800, 0.4);
 	visibility: hidden;
 	cursor: pointer;
 	opacity: 0;
@@ -27,13 +27,15 @@
 		display: inline-block;
 		display: none;
 		width: 100%;
-		max-width: 1000px;
+		max-width: 804px;
 		margin: 50px auto;
-		padding: 20px;
+		@include adaptive-value-base('padding-bottom', 108, 32, 1);
+		@include adaptive-value-base('padding-top', 108, 32, 1);
+		@include adaptive-value-base('padding-left', 32, 16, 1);
+		@include adaptive-value-base('padding-right', 32, 16, 1);
 		text-align: left;
 		vertical-align: middle;
 		background-color: $white;
-		border-radius: 10px;
 		cursor: default;
 
 		@media (max-width: 1024px) {
@@ -43,13 +45,22 @@
 
 	&__close {
 		position: absolute;
-		top: 10px;
-		right: 10px;
-		width: 20px;
-		height: 20px;
-		padding: 0;
+		top: 0;
+		right: 0;
+		width: 40px;
+		height: 40px;
 		background-color: transparent;
-		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512.001 512.001'%3E%3Cpath d='M284.286 256.002L506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285a19.938 19.938 0 0014.143 5.857 19.94 19.94 0 0014.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z'/%3E%3C/svg%3E");
+		background-image: url('../img/icons/close.svg');
+	}
+
+	.form {
+		&__button {
+			color: $dark-700;
+
+			&::before {
+				z-index: 1;
+			}
+		}
 	}
 }
 

@@ -1,0 +1,30 @@
+<div class="graph-modal">
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="connect-modal">
+        <div class="graph-modal__box">
+            <button class="graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="graph-modal__content">
+                <div class="connection connection--modal">
+                    <div class="connection__wrapper">
+                        <h2 class="connection__title title">
+                            Оставить заявку
+                        </h2>
+                        <p class="connection__subtext">
+                            Оставьте заявку на экспертизу и мы оперативно с вами свяжемся
+                        </p>
+                        <form class="connection__form form" action="#">
+                            <div class="form__item">
+                                <label class="sr-only" for="connection-name">Введите ваше имя</label>
+                                <input class="form__field" id="connection-name" name="name" type="text" placeholder="Имя">
+                            </div>
+                            <div class="form__item">
+                                <label class="sr-only" for="connection-phone">Введите номер телефона</label>
+                                <input class="form__field" id="connection-phone" name="phone" type="tel" placeholder="Телефон*" required>
+                            </div>
+                            <button class="form__button button" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

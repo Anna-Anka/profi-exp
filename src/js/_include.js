@@ -10,3 +10,6 @@ import mixitup from 'mixitup';
 let mixer = mixitup('.expertises__items', {
     load: { filter: '.engineering'}
 });
+
+import GraphModal from 'graph-modal';
+const modal = new GraphModal('modal');

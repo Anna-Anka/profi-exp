@@ -6,6 +6,19 @@
 		padding-top: 110px;
 	}
 
+	&--modal {
+		padding: 0;
+
+		@include mq(sm) {
+			padding: 0;
+		}
+
+		.connection__title {
+			color: $dark-700;
+			font-weight: $fw-500;
+		}
+	}
+
 	&__wrapper {
 		width: 100%;
 		max-width: 664px;

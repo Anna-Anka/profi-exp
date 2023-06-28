@@ -32,16 +32,10 @@
 
         <div class="product-card__footer">
             <span class="product-card__price">@price</span>
-            @if(type === "case") {
-            <button class="product-card__button" type="button">
-                Заказать подобную
+            <button class="product-card__button" data-graph-path="connect-modal" type="button">
+                @if(type === "case") {Заказать подобную}
+                @if(type === "expertise") {Заказать}
             </button>
-            }
-            @if(type === "expertise") {
-            <button class="product-card__button" type="button">
-                Заказать
-            </button>
-            }
         </div>
     </div>
 
