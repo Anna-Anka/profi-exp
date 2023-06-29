@@ -20,40 +20,30 @@
     <div class="wrapper">
         <div class="overlay" data-menu-overlay aria-hidden></div>
 <!--  -->
-<header class="header">
+<header class="header" id="header">
     <div class="container">
         <nav class="header__wrapper">
-            <a class="header__logo logo" href="#">
+            <a class="header__logo logo" href="#" data-goto="#hero" data-goto-header>
                 <img class="logo__img" src="img/logo.svg" alt="логотип" width="106" height="34" loading="lazy">
             </a>
             <ul class="header__menu burger-menu" data-menu>
                 <li class="burger-menu__item">
-                    <a class="burger-menu__link" href="#" data-goto="#expertises" data-menu-link>
+                    <a class="burger-menu__link" href="#" data-goto="#expertises" data-goto-header data-menu-link>
                         Экспертизы
                     </a>
                 </li>
                 <li class="burger-menu__item">
-                    <a class="burger-menu__link" href="#" data-goto="#advantages" data-menu-link>
-                        Как мы работаем
-                    </a>
-                </li>
-                <li class="burger-menu__item">
-                    <a class="burger-menu__link" href="#" data-goto="#about" data-menu-link>
+                    <a class="burger-menu__link" href="#" data-goto="#about" data-goto-header data-menu-link>
                         О компании
                     </a>
                 </li>
                 <li class="burger-menu__item">
-                    <a class="burger-menu__link" href="#" data-goto="#reviews" data-menu-link>
+                    <a class="burger-menu__link" href="#" data-goto="#reviews" data-goto-header data-menu-link>
                         Отзывы
                     </a>
                 </li>
                 <li class="burger-menu__item">
-                    <a class="burger-menu__link" href="#" data-menu-link>
-                        Вакансии
-                    </a>
-                </li>
-                <li class="burger-menu__item">
-                    <a class="burger-menu__link" href="#" data-goto="#contacts" data-menu-link>
+                    <a class="burger-menu__link" href="#" data-goto="#contacts" data-goto-header data-menu-link>
                         Контакты
                     </a>
                 </li>
@@ -100,7 +90,7 @@
 
 <main class="main">
     <h1 class="sr-only">Независимая судебная экспертиза</h1>
-    <section class="hero">
+    <section class="hero" id="hero">
     <h2 class="sr-only">Независимая судебная экспертиза</h2>
     <div class="hero__swiper swiper">
         <ul class="hero__items swiper-wrapper">
@@ -163,7 +153,7 @@
     <section class="advantages" id="advantages">
     <div class="advantages__container container">
         <h2 class="sr-only">Преимущества</h2>
-        <ul class="advantages__items" data-simplebar>
+        <ul class="advantages__items">
             <li class="advantages__item" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="200" data-aos-duration="700">
                 <span class="advantages__icon" style="background-image: url('img/advantages/1.svg');" aria-hidden></span>
                 <div>
@@ -209,11 +199,11 @@
     </div>
 </section>
     <section class="expertises" id="expertises">
-    <div class="expertises__container container">
+    <div class="container">
         <h2 class="expertises__title title">
             Экспертизы
         </h2>
-        <div class="expertises__wrapper" data-simplebar>
+        <div class="expertises__wrapper">
             <ul class="expertises__filters">
                 <li class="expertises__filter" data-filter=".engineering">
                     <button class="expertises__button expertises__button--active" type="button">
@@ -315,7 +305,6 @@
             </button>
         </div>
     </div>
-
 </article>
                 </li>
                 <li class="expertises__item mix engineering autotechnical">
@@ -351,7 +340,6 @@
             </button>
         </div>
     </div>
-
 </article>
                 </li>
                 <li class="expertises__item mix engineering videotechnical">
@@ -387,7 +375,6 @@
             </button>
         </div>
     </div>
-
 </article>
                 </li>
                 <li class="expertises__item mix engineering genetic">
@@ -423,7 +410,6 @@
             </button>
         </div>
     </div>
-
 </article>
                 </li>
                 <li class="expertises__item mix engineering authors">
@@ -459,7 +445,6 @@
             </button>
         </div>
     </div>
-
 </article>
                 </li>
                 <li class="expertises__item mix engineering linguistic">
@@ -495,7 +480,6 @@
             </button>
         </div>
     </div>
-
 </article>
                 </li>
                 <li class="expertises__item mix engineering fire-technical">
@@ -531,7 +515,6 @@
             </button>
         </div>
     </div>
-
 </article>
                 </li>
                 <li class="expertises__item mix engineering estimated">
@@ -567,7 +550,6 @@
             </button>
         </div>
     </div>
-
 </article>
                 </li>
             </ul>
@@ -872,7 +854,7 @@
         <h2 class="cases__title title">
             Выполненные экспертизы
         </h2>
-        <ul class="cases__items" data-simplebar>
+        <ul class="cases__items">
             <li class="cases__item">
                 <article class="product-card product-card--case">
 
@@ -904,7 +886,6 @@
             </button>
         </div>
     </div>
-
 </article>
             </li>
             <li class="cases__item">
@@ -938,7 +919,6 @@
             </button>
         </div>
     </div>
-
 </article>
             </li>
             <li class="cases__item">
@@ -972,7 +952,6 @@
             </button>
         </div>
     </div>
-
 </article>
             </li>
             <li class="cases__item">
@@ -1006,7 +985,6 @@
             </button>
         </div>
     </div>
-
 </article>
             </li>
             <li class="cases__item">
@@ -1040,7 +1018,6 @@
             </button>
         </div>
     </div>
-
 </article>
             </li>
             <li class="cases__item">
@@ -1074,7 +1051,6 @@
             </button>
         </div>
     </div>
-
 </article>
             </li>
         </ul>
@@ -1134,14 +1110,190 @@
                 </div>
             </address>
         </div>
-        <div class="contacts__map" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+        <div class="contacts__map" id="map"></div>
+        <!-- <div class="contacts__map" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
             <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
                     style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
                     href="https://yandex.ru/maps/geo/stantsiya_ploshchad_gagarina/1727703611/?indoorLevel=1&ll=37.589594%2C55.706831&utm_medium=mapframe&utm_source=maps&z=17.21"
                     style="color:#eee;font-size:12px;position:absolute;top:14px;">Станция Площадь Гагарина — Яндекс Карты</a><iframe
                     src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.589594%2C55.706831&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNzI3NzAzNjExEoQB0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCc0L7RgdC60L7QstGB0LrQvtC1INGG0LXQvdGC0YDQsNC70YzQvdC-0LUg0LrQvtC70YzRhtC-LCDRgdGC0LDQvdGG0LjRjyDQn9C70L7RidCw0LTRjCDQk9Cw0LPQsNGA0LjQvdCwIgoNs1gWQhXK015C&z=17.21"
                     frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div> -->
+    </div>
+</section>
+
+<section class="contacts" id="contacts">
+    <div class="contacts__wrapper">
+        <div class="contacts__inner" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+            <h2 class="contacts__title title">
+                Контакты
+            </h2>
+            <address class="contacts__info">
+                <ul class="contacts__items">
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="tel:+7495123456">
+                            +7 (495) 123 456
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:info@profi-expert.ru">
+                            info@profi-expert.ru
+                        </a>
+                    </li>
+                    <li class="contacts__item contacts__item--text">
+                        Связаться с нами в
+                        <a class="contacts__link" href="#" target="_blank">
+                            Телеграм
+                        </a>
+                    </li>
+                </ul>
+                <div class="contacts__address">
+                    <span>Адрес:</span>
+                    <p>127000, Москва, площадь Труда, дом 2</p>
+                </div>
+            </address>
         </div>
+        <div class="contacts__map" id="map-2"></div>
+    </div>
+</section>
+
+<section class="contacts" id="contacts">
+    <div class="contacts__wrapper">
+        <div class="contacts__inner" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+            <h2 class="contacts__title title">
+                Контакты
+            </h2>
+            <address class="contacts__info">
+                <ul class="contacts__items">
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="tel:+7495123456">
+                            +7 (495) 123 456
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:info@profi-expert.ru">
+                            info@profi-expert.ru
+                        </a>
+                    </li>
+                    <li class="contacts__item contacts__item--text">
+                        Связаться с нами в
+                        <a class="contacts__link" href="#" target="_blank">
+                            Телеграм
+                        </a>
+                    </li>
+                </ul>
+                <div class="contacts__address">
+                    <span>Адрес:</span>
+                    <p>127000, Москва, площадь Труда, дом 2</p>
+                </div>
+            </address>
+        </div>
+        <div class="contacts__map" id="map-3"></div>
+    </div>
+</section>
+
+<section class="contacts" id="contacts">
+    <div class="contacts__wrapper">
+        <div class="contacts__inner" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+            <h2 class="contacts__title title">
+                Контакты
+            </h2>
+            <address class="contacts__info">
+                <ul class="contacts__items">
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="tel:+7495123456">
+                            +7 (495) 123 456
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:info@profi-expert.ru">
+                            info@profi-expert.ru
+                        </a>
+                    </li>
+                    <li class="contacts__item contacts__item--text">
+                        Связаться с нами в
+                        <a class="contacts__link" href="#" target="_blank">
+                            Телеграм
+                        </a>
+                    </li>
+                </ul>
+                <div class="contacts__address">
+                    <span>Адрес:</span>
+                    <p>127000, Москва, площадь Труда, дом 2</p>
+                </div>
+            </address>
+        </div>
+        <div class="contacts__map" id="map-4"></div>
+    </div>
+</section>
+
+<section class="contacts" id="contacts">
+    <div class="contacts__wrapper">
+        <div class="contacts__inner" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+            <h2 class="contacts__title title">
+                Контакты
+            </h2>
+            <address class="contacts__info">
+                <ul class="contacts__items">
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="tel:+7495123456">
+                            +7 (495) 123 456
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:info@profi-expert.ru">
+                            info@profi-expert.ru
+                        </a>
+                    </li>
+                    <li class="contacts__item contacts__item--text">
+                        Связаться с нами в
+                        <a class="contacts__link" href="#" target="_blank">
+                            Телеграм
+                        </a>
+                    </li>
+                </ul>
+                <div class="contacts__address">
+                    <span>Адрес:</span>
+                    <p>127000, Москва, площадь Труда, дом 2</p>
+                </div>
+            </address>
+        </div>
+        <div class="contacts__map" id="map-5"></div>
+    </div>
+</section>
+
+<section class="contacts" id="contacts">
+    <div class="contacts__wrapper">
+        <div class="contacts__inner" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+            <h2 class="contacts__title title">
+                Контакты
+            </h2>
+            <address class="contacts__info">
+                <ul class="contacts__items">
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="tel:+7495123456">
+                            +7 (495) 123 456
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:info@profi-expert.ru">
+                            info@profi-expert.ru
+                        </a>
+                    </li>
+                    <li class="contacts__item contacts__item--text">
+                        Связаться с нами в
+                        <a class="contacts__link" href="#" target="_blank">
+                            Телеграм
+                        </a>
+                    </li>
+                </ul>
+                <div class="contacts__address">
+                    <span>Адрес:</span>
+                    <p>127000, Москва, площадь Труда, дом 2</p>
+                </div>
+            </address>
+        </div>
+        <div class="contacts__map" id="map-6"></div>
     </div>
 </section>
 </main>
@@ -1152,7 +1304,7 @@
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__info">
-                    <a class="footer__logo logo" href="#">
+                    <a class="footer__logo logo" href="#" data-goto="#header" data-goto-header>
                         <img class="logo__img" src="img/logo.svg" alt="логотип" width="106" height="34" loading="lazy">
                     </a>
                     <p class="footer__text">
@@ -1164,17 +1316,12 @@
                         <li class="footer__list">
                             <ul class="footer__items">
                                 <li class="footer__item">
-                                    <a class="footer__link" href="#">
+                                    <a class="footer__link" href="#" data-goto="#expertises" data-goto-header>
                                         Экспертизы
                                     </a>
                                 </li>
                                 <li class="footer__item">
-                                    <a class="footer__link" href="#">
-                                        Как мы работаем
-                                    </a>
-                                </li>
-                                <li class="footer__item">
-                                    <a class="footer__link" href="#">
+                                    <a class="footer__link" href="#" data-goto="#about" data-goto-header>
                                         О компании
                                     </a>
                                 </li>
@@ -1183,17 +1330,12 @@
                         <li class="footer__list">
                             <ul class="footer__items">
                                 <li class="footer__item">
-                                    <a class="footer__link" href="#">
+                                    <a class="footer__link" href="#" data-goto="#reviews" data-goto-header>
                                         Отзывы
                                     </a>
                                 </li>
                                 <li class="footer__item">
-                                    <a class="footer__link" href="#">
-                                        Вакансии
-                                    </a>
-                                </li>
-                                <li class="footer__item">
-                                    <a class="footer__link" href="#">
+                                    <a class="footer__link" href="#" data-goto="#contacts" data-goto-header>
                                         Контакты
                                     </a>
                                 </li>
@@ -1234,13 +1376,14 @@
         <div class="container">
             <div class="footer__bottom-box">
                 <span>© 2023 Профит-Эксперт. Все права защищены.</span>
-                <a href="#">Пользовательское соглашение</a>
+                <a class="footer__agreement" href="#">Пользовательское соглашение</a>
             </div>
         </div>
     </div>
 </footer>
 <!--  -->
 </div>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
 </body>
-  
+
 </html>
