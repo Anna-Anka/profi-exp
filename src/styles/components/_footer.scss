@@ -124,4 +124,8 @@
 		@include adaptive-value-base('gap', 24, 8, 1);
 		@include flex-center-sb;
 	}
+
+	&__agreement {
+		@include link-animation;
+	}
 }

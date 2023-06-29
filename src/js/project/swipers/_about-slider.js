@@ -13,11 +13,11 @@ export const aboutSlider = () => {
 
             breakpoints: {
                 560: {
-                    spaceBetween: 3,
+                    spaceBetween: 4,
                 },
 
-                375: {
-                    spaceBetween: 2,
+                320: {
+                    spaceBetween: 3,
                 },
             },
         });
@@ -34,7 +34,7 @@ export const aboutSlider = () => {
                     spaceBetween: 26,
                 },
 
-                375: {
+                320: {
                     spaceBetween: 20,
                 },
             },

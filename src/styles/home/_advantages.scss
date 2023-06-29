@@ -13,17 +13,17 @@
 	}
 
 	&__items {
-		padding-bottom: 25px;
-	}
-
-	.simplebar-content {
 		display: flex;
 		gap: 24px;
 		justify-content: space-between;
-	}
+		padding-bottom: 25px;
+		overflow-x: auto;
+		overflow-y: hidden;
 
-	.simplebar-vertical {
-		display: none;
+		@include mq(lg) {
+			gap: 38px;
+			padding-right: 10px;
+		}
 	}
 
 	&__item {

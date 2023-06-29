@@ -101,6 +101,10 @@
 	&__small {
 		width: 100%;
 		max-width: 64px;
+
+		@include mq(xs) {
+			display: none;
+		}
 	}
 
 	&__thumb {

@@ -34,6 +34,11 @@
 	}
 
 	&__link {
+		color: $white;
 		@include link-animation;
+
+		@include mq(lg) {
+			color: $dark-700;
+		}
 	}
 }

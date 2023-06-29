@@ -30,13 +30,7 @@
 	}
 
 	&__wrapper {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
-		@include mq(lg) {
-			justify-content: space-between;
-		}
+		@include flex-center-sb;
 	}
 
 	&__logo {
@@ -57,7 +51,6 @@
 			margin-right: 0 !important;
 			padding: 40px 24px;
 			overflow: hidden;
-			color: $dark-700;
 			background-color: $yellow-400;
 			transform: translateX(100%);
 			visibility: hidden;
@@ -75,7 +68,7 @@
 	.burger-button {
 		@include burger;
 		@include focus-animation;
-		z-index: 5;
+		z-index: 50;
 
 		@media (any-hover: hover) {
 			&:hover {

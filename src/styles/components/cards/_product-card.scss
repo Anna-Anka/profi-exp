@@ -2,6 +2,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	height: 100%;
 	line-height: 1.1;
 	border: 1px solid $yellow-400;
@@ -9,11 +10,50 @@
 
 	&::before {
 		z-index: -1;
+		transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+			top 0.3s ease-in-out, left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			&::before {
+				top: 2px;
+				left: 2px;
+				width: calc(100% - 4px);
+				height: calc(100% - 4px);
+			}
+
+			.product-card__image {
+				&::before {
+					opacity: 0;
+				}
+			}
+
+			.product-card__img {
+				transform: scale(1.1);
+			}
+		}
 	}
 
 	&--case {
-		.product-card__img {
-			height: 165px;
+		@media (any-hover: hover) {
+			&:hover {
+				.product-card__img {
+					transform: scale(1.05);
+				}
+			}
+		}
+
+		.product-card__image {
+			padding-bottom: 43%;
+
+			@include mq(lg) {
+				padding-bottom: 57%;
+			}
+
+			@include mq(md) {
+				padding-bottom: 48%;
+			}
 		}
 
 		.product-card__wrapper {
@@ -32,6 +72,14 @@
 	}
 
 	&__image {
+		position: relative;
+		padding-bottom: 63%;
+		overflow: hidden;
+
+		@include mq(sm) {
+			padding-bottom: 55%;
+		}
+
 		&::before {
 			position: absolute;
 			top: 0;
@@ -43,16 +91,18 @@
 				rgba(42, 43, 65, 0.66) 0%,
 				rgba(111, 112, 85, 0) 100%
 			);
+			transition: opacity 0.3s ease-in-out;
 			content: '';
 		}
 	}
 
 	&__img {
-		position: relative;
+		position: absolute;
 		z-index: -2;
 		width: 100%;
+		height: 100%;
 		object-fit: cover;
-		@include adaptive-value-base('height', 180, 120, 1);
+		transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 	}
 
 	&__inner {
@@ -79,13 +129,8 @@
 	}
 
 	&__text {
-		@include line-clamp(5);
 		font-size: 12px;
 		line-height: 1.4;
-
-		@include mq(lg) {
-			display: none;
-		}
 
 		p {
 			&:not(:last-child) {
@@ -99,6 +144,7 @@
 		flex-wrap: wrap;
 		gap: 16px;
 		justify-content: space-between;
+		margin-top: auto;
 	}
 
 	&__price {
@@ -114,9 +160,5 @@
 		color: $yellow-400;
 		font-weight: $fw-600;
 		@include link-animation;
-
-		&::after {
-			background-color: $yellow-400;
-		}
 	}
 }

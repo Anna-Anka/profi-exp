@@ -12,20 +12,7 @@
 
 @mixin link-animation {
 	position: relative;
-	transition: opacity 0.3s ease-in-out;
-
-	&::after {
-		position: absolute;
-		right: 0;
-		bottom: -2px;
-		left: 0;
-		height: 1px;
-		background-color: $white;
-		transform: scaleX(0);
-		transform-origin: 0 50%;
-		transition: transform 0.4s ease-out;
-		content: '';
-	}
+	transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
 
 	&:focus-visible {
 		outline: 0;
@@ -33,7 +20,22 @@
 	}
 
 	@media (any-hover: hover) {
+		&::after {
+			position: absolute;
+			right: 0;
+			bottom: -2px;
+			left: 0;
+			height: 1px;
+			background-color: $yellow-400;
+			transform: scaleX(0);
+			transform-origin: 0 50%;
+			transition: transform 0.4s ease-out;
+			content: '';
+		}
+
 		&:hover {
+			color: $yellow-400;
+
 			&::after {
 				transform: scaleX(1);
 			}
