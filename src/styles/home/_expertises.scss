@@ -65,6 +65,12 @@
 			&::before {
 				border-color: $yellow-400;
 			}
+
+			@media (any-hover: hover) {
+				&:hover {
+					color: $grey-100;
+				}
+			}
 		}
 	}
 

@@ -1,4 +1,6 @@
-import '../../_include';
+import Swiper, { Pagination, Thumbs } from 'swiper';
+
+Swiper.use([Pagination, Thumbs]);
 
 export const aboutSlider = () => {
     if (document.querySelector('.about__main')) {

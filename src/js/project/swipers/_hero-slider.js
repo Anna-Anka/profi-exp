@@ -1,6 +1,6 @@
-import '../../_include';
+import Swiper, { Pagination } from 'swiper';
 
-// import Swiper from 'swiper';
+Swiper.use([Pagination]);
 
 export const heroSlider = () => {
     if (document.querySelector('.hero__swiper')) {
@@ -10,11 +10,11 @@ export const heroSlider = () => {
             slidesPerGroup: 1,
             slidesPerView: 1,
 
-            // autoplay: {
-            //     delay: 8000,
-            //     disableOnInteraction: false,
-            //     stopOnlastSlide: false,
-            // },
+            autoplay: {
+                delay: 8000,
+                disableOnInteraction: false,
+                stopOnlastSlide: false,
+            },
 
             pagination: {
                 el: '.swiper-pagination',

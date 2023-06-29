@@ -1,6 +1,6 @@
-import '../../_include';
+import Swiper, { Pagination } from 'swiper';
 
-// import Swiper from 'swiper';
+Swiper.use([Pagination]);
 
 export const reviewsSlider = () => {
     if (document.querySelector('.reviews__swiper')) {
