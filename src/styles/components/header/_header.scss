@@ -30,7 +30,8 @@
 	}
 
 	&__wrapper {
-		@include flex-center-sb;
+		display: flex;
+		align-items: center;
 	}
 
 	&__logo {
@@ -60,15 +61,17 @@
 	}
 
 	&__connect {
+		margin-left: auto;
 		@include mq(lg) {
 			display: none;
 		}
 	}
 
 	.burger-button {
+		z-index: 50;
+		margin-left: auto;
 		@include burger;
 		@include focus-animation;
-		z-index: 50;
 
 		@media (any-hover: hover) {
 			&:hover {
