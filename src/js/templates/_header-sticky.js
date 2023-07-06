@@ -5,40 +5,49 @@ export const headerSticky = () => {
     const hero = document.querySelector('.hero');
     let headerHeight = header.offsetHeight;
     let lastScrollTop = 0;
-    hero.style.paddingTop = `${headerHeight}px`;
     let height = `${headerHeight}px`;
-    document.documentElement.style.setProperty('--my-variable', height);
 
     const updateHeightHeader = () => {
         headerHeight = header.offsetHeight;
-
         height = `${headerHeight}px`;
-        document.documentElement.style.setProperty('--my-variable', height);
     };
 
     const updateHeightHeaderTrottle = throttle(updateHeightHeader);
 
     window.addEventListener('resize', updateHeightHeaderTrottle);
 
+    let counter = 0;
     const addedClass = () => {
-        let scrollDistance = window.scrollY;
-        if (scrollDistance > lastScrollTop) {
-            header.classList.remove('header--fixed');
-            hero.classList.remove('hero--active');
-            header.classList.add('header--hide');
-        } else {
-            header.classList.add('header--fixed');
-            hero.classList.add('hero--active');
-            header.classList.remove('header--hide');
-        }
+        const scrollDistance = window.scrollY;
 
-        if (scrollDistance === 0) {
-            header.classList.remove('header--fixed');
-            hero.classList.remove('hero--active');
-            header.classList.remove('header--hide');
+        if (counter === 0) {
+            if (scrollDistance !== 0 && lastScrollTop === 0) {
+                header.classList.add('header--fixed');
+                hero.style.paddingTop = height;
+                header.classList.remove('header--hide');
+            }
+        } else {
+            if (scrollDistance > lastScrollTop) {
+                header.classList.remove('header--fixed');
+                hero.classList.remove('hero--active');
+                if (scrollDistance !== 1 && lastScrollTop !== 0) {
+                    header.classList.add('header--hide');
+                }
+            } else {
+                header.classList.add('header--fixed');
+                hero.style.paddingTop = height;
+                header.classList.remove('header--hide');
+            }
+
+            if (scrollDistance === 0) {
+                header.classList.remove('header--fixed');
+                hero.style.paddingTop = '0';
+                header.classList.remove('header--hide');
+            }
         }
 
         lastScrollTop = scrollDistance;
+        counter++;
     };
 
     const addedClassTrottle = throttle(addedClass);
