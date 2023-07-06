@@ -4,10 +4,10 @@ import { plugins } from '../plugins';
 plugins.gulp.task('serve', () => {
     plugins.browsersync.init({
         server: `${paths.productFolder}/`,
-        host: '192.168.1.1',
-        port: 3000,
-        notify: true,
-        tunnel: true,
+        // host: '192.168.1.1',
+        // port: 3000,
+        // notify: true,
+        // tunnel: true,
     });
 
     plugins.gulp.watch(paths.html.watch, plugins.gulp.parallel('views'));

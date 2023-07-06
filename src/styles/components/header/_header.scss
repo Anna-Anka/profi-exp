@@ -23,7 +23,6 @@
 
 	&--fixed {
 		position: fixed;
-		// animation: slideDown 0.35s ease-out;
 		transform: translateY(0);
 	}
 
@@ -93,14 +92,5 @@
 		@include mq(lg, min) {
 			display: none;
 		}
-	}
-}
-
-@keyframes slideDown {
-	from {
-		transform: translateY(-100%);
-	}
-	to {
-		transform: translateY(0);
 	}
 }

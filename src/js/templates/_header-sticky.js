@@ -29,7 +29,8 @@ export const headerSticky = () => {
         } else {
             if (scrollDistance > lastScrollTop) {
                 header.classList.remove('header--fixed');
-                hero.classList.remove('hero--active');
+                hero.style.paddingTop = height;
+                header.classList.add('header--hide');
                 if (scrollDistance !== 1 && lastScrollTop !== 0) {
                     header.classList.add('header--hide');
                 }
