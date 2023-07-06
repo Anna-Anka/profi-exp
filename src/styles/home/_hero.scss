@@ -1,4 +1,12 @@
+:root {
+	--my-variable: initial;
+}
+
 .hero {
+	&--active {
+		padding-top: var(--my-variable);
+	}
+
 	&__swiper {
 		position: relative;
 

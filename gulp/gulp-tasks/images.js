@@ -15,7 +15,7 @@ plugins.gulp.task('images', () => {
             }),
             plugins.imageminPngquant({
                 speed: 5,
-                quality: [0.6, 0.8],
+                quality: '60-80',
             }),
             plugins.imageminZopfli({
                 more: true,

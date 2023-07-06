@@ -6,10 +6,14 @@ export const headerSticky = () => {
     let headerHeight = header.offsetHeight;
     let lastScrollTop = 0;
     hero.style.paddingTop = `${headerHeight}px`;
+    let height = `${headerHeight}px`;
+    document.documentElement.style.setProperty('--my-variable', height);
 
     const updateHeightHeader = () => {
         headerHeight = header.offsetHeight;
-        hero.style.paddingTop = `${headerHeight}px`;
+
+        height = `${headerHeight}px`;
+        document.documentElement.style.setProperty('--my-variable', height);
     };
 
     const updateHeightHeaderTrottle = throttle(updateHeightHeader);
@@ -20,12 +24,18 @@ export const headerSticky = () => {
         let scrollDistance = window.scrollY;
         if (scrollDistance > lastScrollTop) {
             header.classList.remove('header--fixed');
+            hero.classList.remove('hero--active');
+            header.classList.add('header--hide');
         } else {
             header.classList.add('header--fixed');
+            hero.classList.add('hero--active');
+            header.classList.remove('header--hide');
         }
 
         if (scrollDistance === 0) {
             header.classList.remove('header--fixed');
+            hero.classList.remove('hero--active');
+            header.classList.remove('header--hide');
         }
 
         lastScrollTop = scrollDistance;
