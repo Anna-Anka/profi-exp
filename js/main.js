@@ -345,33 +345,42 @@ var headerSticky = function headerSticky() {
   var hero = document.querySelector('.hero');
   var headerHeight = header.offsetHeight;
   var lastScrollTop = 0;
-  hero.style.paddingTop = "".concat(headerHeight, "px");
   var height = "".concat(headerHeight, "px");
-  document.documentElement.style.setProperty('--my-variable', height);
   var updateHeightHeader = function updateHeightHeader() {
     headerHeight = header.offsetHeight;
     height = "".concat(headerHeight, "px");
-    document.documentElement.style.setProperty('--my-variable', height);
   };
   var updateHeightHeaderTrottle = (0,_utils_throttle__WEBPACK_IMPORTED_MODULE_0__.throttle)(updateHeightHeader);
   window.addEventListener('resize', updateHeightHeaderTrottle);
+  var counter = 0;
   var addedClass = function addedClass() {
     var scrollDistance = window.scrollY;
-    if (scrollDistance > lastScrollTop) {
-      header.classList.remove('header--fixed');
-      hero.classList.remove('hero--active');
-      header.classList.add('header--hide');
+    if (counter === 0) {
+      if (scrollDistance !== 0 && lastScrollTop === 0) {
+        header.classList.add('header--fixed');
+        hero.style.paddingTop = height;
+        header.classList.remove('header--hide');
+      }
     } else {
-      header.classList.add('header--fixed');
-      hero.classList.add('hero--active');
-      header.classList.remove('header--hide');
-    }
-    if (scrollDistance === 0) {
-      header.classList.remove('header--fixed');
-      hero.classList.remove('hero--active');
-      header.classList.remove('header--hide');
+      if (scrollDistance > lastScrollTop) {
+        header.classList.remove('header--fixed');
+        hero.classList.remove('hero--active');
+        if (scrollDistance !== 1 && lastScrollTop !== 0) {
+          header.classList.add('header--hide');
+        }
+      } else {
+        header.classList.add('header--fixed');
+        hero.style.paddingTop = height;
+        header.classList.remove('header--hide');
+      }
+      if (scrollDistance === 0) {
+        header.classList.remove('header--fixed');
+        hero.style.paddingTop = '0';
+        header.classList.remove('header--hide');
+      }
     }
     lastScrollTop = scrollDistance;
+    counter++;
   };
   var addedClassTrottle = (0,_utils_throttle__WEBPACK_IMPORTED_MODULE_0__.throttle)(addedClass);
   window.addEventListener('scroll', addedClassTrottle);
